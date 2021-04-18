@@ -35,12 +35,6 @@ module.exports = {
                 allowExpressions: true,
             },
         ],
-        '@typescript-eslint/explicit-member-accessibility': [
-            'error',
-            {
-                accessibility: 'explicit',
-            },
-        ],
         '@typescript-eslint/method-signature-style': ['error', 'method'],
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-inferrable-types': ['off'],

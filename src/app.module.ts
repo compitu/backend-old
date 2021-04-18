@@ -1,10 +1,13 @@
 import {Module} from '@nestjs/common';
-import {TaskController} from './task.controller';
-import {TaskService} from './task.service';
+import {MongooseModule} from '@nestjs/mongoose';
+import {TaskModule} from './task/task.module';
 
 @Module({
-    imports: [],
-    controllers: [TaskController],
-    providers: [TaskService],
+    imports: [
+        MongooseModule.forRoot('mongodb://localhost:27017/compitu-db'),
+        TaskModule,
+    ],
+    controllers: [],
+    providers: [],
 })
 export class AppModule {}
