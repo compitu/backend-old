@@ -13,10 +13,10 @@ export class Task extends Document {
     projectId: string;
 
     @Prop()
-    due?: Date;
+    due: Date;
 
     @Prop([String])
-    tags?: string[];
+    tags: string[];
 }
 
 export const TaskSchema = SchemaFactory.createForClass(Task);
