@@ -6,18 +6,20 @@ import {
     Req,
     Res,
     UnauthorizedException,
+    UseGuards,
 } from '@nestjs/common';
-import {JwtService} from '@nestjs/jwt';
 import * as bcrypt from 'bcrypt';
 import {Request, Response} from 'express';
 import {User} from '../users/user.entity';
 import {UsersService} from '../users/users.service';
+import {JwtAuthGuard} from './jwt-auth.guard';
+import {TokenService} from './token.service';
 
 @Controller('auth')
 export class AuthController {
     constructor(
         private usersService: UsersService,
-        private jwtService: JwtService
+        private tokenService: TokenService
     ) {}
 
     @Post('register')
@@ -44,9 +46,8 @@ export class AuthController {
     @Post('login')
     async login(
         @Body('email') email: string,
-        @Body('password') password: string,
-        @Res({passthrough: true}) response: Response
-    ): Promise<{message: string}> {
+        @Body('password') password: string
+    ): Promise<unknown> {
         const user = await this.usersService.findOne({email});
 
         if (!user) {
@@ -57,26 +58,50 @@ export class AuthController {
             throw new UnauthorizedException();
         }
 
-        const jwt = await this.jwtService.signAsync({id: user.id});
+        const access = await this.tokenService.generateAccessToken(user.id);
+        const refresh = await this.tokenService.generateRefreshToken(user.id);
 
-        response.cookie('jwt', jwt, {httpOnly: true});
-
-        return {message: 'Success'};
+        return {access, refresh};
     }
 
+    @Post('refresh')
+    async refresh(
+        @Body('refresh') refreshToken: string,
+        @Res({passthrough: true}) response: Response
+    ): Promise<unknown> {
+        const data = await this.tokenService.verifyRefreshToken(refreshToken);
+
+        if (!data) {
+            throw new UnauthorizedException();
+        }
+
+        const access = await this.tokenService.generateAccessToken(data.id);
+        const refresh = await this.tokenService.generateRefreshToken(data.id);
+
+        return {access, refresh};
+    }
+
+    @UseGuards(JwtAuthGuard)
     @Get('user')
     async user(@Req() request: Request): Promise<Partial<User>> {
         try {
-            const cookie = request.cookies.jwt;
-            const data = await this.jwtService.verifyAsync(cookie);
+            const authHeader = request.header('Authorization');
+
+            if (!authHeader.startsWith('Bearer')) {
+                throw new UnauthorizedException();
+            }
+
+            const accessToken = authHeader.slice(7, authHeader.length);
+
+            const data = await this.tokenService.verifyAccessToken(accessToken);
 
             if (!data) {
                 throw new UnauthorizedException();
             }
 
-            const user = await this.usersService.findOne({id: data._id});
+            const user = await this.usersService.findOne({_id: data.id});
             const userWithoutPass = {
-                id: user._id,
+                id: user.id,
                 name: user.name,
                 email: user.email,
             };
@@ -90,7 +115,7 @@ export class AuthController {
     async logout(
         @Res({passthrough: true}) response: Response
     ): Promise<{message: string}> {
-        response.clearCookie('jwt');
+        // ToDo: Implement properly the logout mechanism.
         return {message: 'Success'};
     }
 }
