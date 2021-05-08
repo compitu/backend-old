@@ -4,16 +4,16 @@ import {ProjectType} from './project-type';
 
 @Schema()
 export class Project extends Document {
-    @Prop()
+    @Prop({type: String, required: true})
     name: string;
 
-    @Prop()
+    @Prop({type: String, required: true})
     userId: string;
 
-    @Prop()
+    @Prop({type: String})
     colorId: string;
 
-    @Prop()
+    @Prop({required: true})
     type: ProjectType;
 }
 

@@ -3,19 +3,19 @@ import {Document} from 'mongoose';
 
 @Schema()
 export class Task extends Document {
-    @Prop()
-    label: string;
+    @Prop({type: String, required: true})
+    name: string;
 
-    @Prop()
+    @Prop({type: Boolean, required: true})
     done: boolean;
 
-    @Prop()
+    @Prop({type: String, required: true})
     projectId: string;
 
-    @Prop()
+    @Prop({type: Date})
     due: Date;
 
-    @Prop([String])
+    @Prop({type: [String]})
     tags: string[];
 }
 

@@ -3,13 +3,22 @@ import {Document} from 'mongoose';
 
 @Schema()
 export class Tag extends Document {
-    @Prop()
+    @Prop({
+        type: String,
+        required: true,
+    })
     name: string;
 
-    @Prop()
+    @Prop({
+        type: String,
+        required: true,
+    })
     userId: string;
 
-    @Prop()
+    @Prop({
+        type: String,
+        required: true,
+    })
     colorId: string;
 }
 
