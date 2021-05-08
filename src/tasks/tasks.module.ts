@@ -1,8 +1,8 @@
 import {Module} from '@nestjs/common';
 import {MongooseModule} from '@nestjs/mongoose';
-import {TaskController} from './task.controller';
 import {Task, TaskSchema} from './task.entity';
-import {TaskService} from './task.service';
+import {TasksController} from './tasks.controller';
+import {TasksService} from './tasks.service';
 
 @Module({
     imports: [
@@ -13,7 +13,7 @@ import {TaskService} from './task.service';
             },
         ]),
     ],
-    controllers: [TaskController],
-    providers: [TaskService],
+    controllers: [TasksController],
+    providers: [TasksService],
 })
-export class TaskModule {}
+export class TasksModule {}
