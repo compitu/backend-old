@@ -10,8 +10,10 @@ import {
 } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 import {Request, Response} from 'express';
+import {CreateUserDto} from '../users/create-user.dto';
 import {User} from '../users/user.entity';
 import {UsersService} from '../users/users.service';
+import {CreateLoginDto} from './create-login.dto';
 import {JwtAuthGuard} from './jwt-auth.guard';
 import {TokenService} from './token.service';
 
@@ -24,10 +26,12 @@ export class AuthController {
 
     @Post('register')
     async register(
-        @Body('name') name: string,
-        @Body('email') email: string,
-        @Body('password') password: string
+        @Body() createUserDto: CreateUserDto
     ): Promise<Partial<User>> {
+        const name = createUserDto.name;
+        const email = createUserDto.email;
+        const password = createUserDto.password;
+
         const hashedPassword = await bcrypt.hash(password, 12);
 
         const user = await this.usersService.create({
@@ -44,10 +48,10 @@ export class AuthController {
     }
 
     @Post('login')
-    async login(
-        @Body('email') email: string,
-        @Body('password') password: string
-    ): Promise<unknown> {
+    async login(@Body() createLoginDto: CreateLoginDto): Promise<unknown> {
+        const email = createLoginDto.email;
+        const password = createLoginDto.password;
+
         const user = await this.usersService.findOne({email});
 
         if (!user) {
