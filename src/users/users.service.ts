@@ -7,11 +7,15 @@ import {User} from './user.entity';
 export class UsersService {
     constructor(@InjectModel(User.name) private userModel: Model<User>) {}
 
-    async create(data: unknown): Promise<User> {
-        return this.userModel.create(data);
+    async create(user: User): Promise<User> {
+        return this.userModel.create(user);
     }
 
-    async findOne(data: unknown): Promise<User> {
-        return this.userModel.findOne(data);
+    async findById(id: string): Promise<User> {
+        return this.userModel.findById(id);
+    }
+
+    async findByEmail(email: string): Promise<User> {
+        return this.userModel.findOne({email});
     }
 }

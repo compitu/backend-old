@@ -4,12 +4,14 @@ import {
     Get,
     Post,
     Req,
-    Res,
     UnauthorizedException,
     UseGuards,
 } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
-import {Request, Response} from 'express';
+import {Request} from 'express';
+import {ProjectType} from '../projects/project-type';
+import {Project} from '../projects/project.entity';
+import {ProjectsService} from '../projects/projects.service';
 import {CreateUserDto} from '../users/create-user.dto';
 import {User} from '../users/user.entity';
 import {UsersService} from '../users/users.service';
@@ -21,7 +23,8 @@ import {TokenService} from './token.service';
 export class AuthController {
     constructor(
         private usersService: UsersService,
-        private tokenService: TokenService
+        private tokenService: TokenService,
+        private projectService: ProjectsService
     ) {}
 
     @Post('register')
@@ -38,13 +41,19 @@ export class AuthController {
             name,
             email,
             password: hashedPassword,
-        });
-        const userWithoutPass = {
+        } as User);
+
+        const project = await this.projectService.create({
+            name: 'Inbox',
+            type: ProjectType.BUILT_IN,
+            userId: user._id,
+        } as Project);
+
+        return {
             id: user._id,
             name: user.name,
             email: user.email,
         };
-        return userWithoutPass;
     }
 
     @Post('login')
@@ -52,7 +61,7 @@ export class AuthController {
         const email = createLoginDto.email;
         const password = createLoginDto.password;
 
-        const user = await this.usersService.findOne({email});
+        const user = await this.usersService.findByEmail(email);
 
         if (!user) {
             throw new UnauthorizedException();
@@ -69,10 +78,7 @@ export class AuthController {
     }
 
     @Post('refresh')
-    async refresh(
-        @Body('refresh') refreshToken: string,
-        @Res({passthrough: true}) response: Response
-    ): Promise<unknown> {
+    async refresh(@Body('refresh') refreshToken: string): Promise<unknown> {
         const data = await this.tokenService.verifyRefreshToken(refreshToken);
 
         if (!data) {
@@ -103,22 +109,19 @@ export class AuthController {
                 throw new UnauthorizedException();
             }
 
-            const user = await this.usersService.findOne({_id: data.id});
-            const userWithoutPass = {
+            const user = await this.usersService.findById(data.id);
+            return {
                 id: user.id,
                 name: user.name,
                 email: user.email,
             };
-            return userWithoutPass;
         } catch (e) {
             throw new UnauthorizedException();
         }
     }
 
     @Post('logout')
-    async logout(
-        @Res({passthrough: true}) response: Response
-    ): Promise<{message: string}> {
+    async logout(): Promise<{message: string}> {
         // ToDo: Implement properly the logout mechanism.
         return {message: 'Success'};
     }
