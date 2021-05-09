@@ -19,7 +19,11 @@ export class TasksService {
         return this.taskModel.find({projectId}).exec();
     }
 
-    public findManyForTag(tagId: string): Promise<TaskEntity[]> {
+    public findByTagId(tagId: string): Promise<TaskEntity[]> {
         return this.taskModel.find().where({tags: tagId}).exec();
+    }
+
+    public findByUserId(userId: string): Promise<TaskEntity[]> {
+        return this.taskModel.find({userId}).exec();
     }
 }

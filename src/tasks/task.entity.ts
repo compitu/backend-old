@@ -12,6 +12,9 @@ export class Task extends Document {
     @Prop({type: String, required: true})
     projectId: string;
 
+    @Prop({type: String, required: true})
+    userId: string;
+
     @Prop({type: Date})
     due: Date;
 

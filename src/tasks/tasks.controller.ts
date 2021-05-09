@@ -1,4 +1,5 @@
-import {Body, Controller, Get, Param, Post} from '@nestjs/common';
+import {Body, Controller, Get, Param, Post, UseGuards} from '@nestjs/common';
+import {JwtAuthGuard} from '../auth/jwt-auth.guard';
 import {CreateTaskDto} from './create-task.dto';
 import {Task} from './task.entity';
 import {TasksService} from './tasks.service';
@@ -7,18 +8,21 @@ import {TasksService} from './tasks.service';
 export class TasksController {
     public constructor(private readonly taskService: TasksService) {}
 
+    @UseGuards(JwtAuthGuard)
     @Post('tasks')
     async create(@Body() createTaskDto: CreateTaskDto): Promise<void> {
         await this.taskService.create(createTaskDto);
     }
 
-    @Get('projects/:projectId/tasks')
-    async findMany(@Param('projectId') projectId: string): Promise<Task[]> {
-        return this.taskService.findMany(projectId);
+    @UseGuards(JwtAuthGuard)
+    @Get('users/:userId/tasks')
+    async findById(@Param('userId') userId: string): Promise<Task[]> {
+        return this.taskService.findByUserId(userId);
     }
 
+    @UseGuards(JwtAuthGuard)
     @Get('tags/:tagId/tasks')
-    async findManyForTag(@Param('tagId') tagId: string): Promise<Task[]> {
-        return this.taskService.findManyForTag(tagId);
+    async findByTag(@Param('tagId') tagId: string): Promise<Task[]> {
+        return this.taskService.findByTagId(tagId);
     }
 }

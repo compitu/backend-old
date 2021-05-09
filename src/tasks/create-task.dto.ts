@@ -22,6 +22,11 @@ export class CreateTaskDto {
     @Length(1)
     readonly projectId: string;
 
+    @IsDefined()
+    @IsString()
+    @Length(1)
+    readonly userId: string;
+
     @IsDate({always: false})
     readonly due: Date;
 
