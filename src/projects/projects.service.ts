@@ -2,6 +2,8 @@ import {Injectable} from '@nestjs/common';
 import {InjectModel} from '@nestjs/mongoose';
 import {Model} from 'mongoose';
 import {CreateProjectDto} from './create-project.dto';
+import {ProjectsResponse} from './project-response';
+import {ProjectType} from './project-type';
 import {Project as ProjectEntity} from './project.entity';
 
 @Injectable()
@@ -18,7 +20,27 @@ export class ProjectsService {
         return createdProject.save();
     }
 
-    public async findMany(userId: string): Promise<ProjectEntity[]> {
-        return this.projectModel.find({userId}).exec();
+    public async delete(id: string): Promise<ProjectEntity> {
+        return this.projectModel.findByIdAndDelete(id);
+    }
+
+    public async findMany(userId: string): Promise<ProjectsResponse> {
+        const projectEntities = await this.projectModel.find({userId}).exec();
+        const builtIn = projectEntities
+            .filter(projects => projects.type === ProjectType.BUILT_IN)
+            .map(project => ({
+                id: project._id,
+                name: project.name,
+                icon: project.icon,
+            }));
+        const userProjects = projectEntities
+            .filter(projects => projects.type === ProjectType.USER_PROJECT)
+            .map(project => ({
+                id: project._id,
+                name: project.name,
+                colorId: project.colorId,
+            }));
+
+        return {builtIn, userProjects};
     }
 }

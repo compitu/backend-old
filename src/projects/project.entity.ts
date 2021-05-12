@@ -11,6 +11,9 @@ export class Project extends Document {
     userId: string;
 
     @Prop({type: String})
+    icon: string;
+
+    @Prop({type: String})
     colorId: string;
 
     @Prop({required: true})

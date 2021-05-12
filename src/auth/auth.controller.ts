@@ -47,6 +47,7 @@ export class AuthController {
             name: 'Inbox',
             type: ProjectType.BUILT_IN,
             userId: user._id,
+            icon: 'inbox',
         } as Project);
 
         return {

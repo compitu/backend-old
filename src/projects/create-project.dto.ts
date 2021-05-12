@@ -13,6 +13,9 @@ export class CreateProjectDto {
     readonly userId: string;
 
     @IsString()
+    readonly icon: string;
+
+    @IsString()
     readonly colorId: string;
 
     @IsDefined()
