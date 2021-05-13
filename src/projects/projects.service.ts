@@ -20,6 +20,15 @@ export class ProjectsService {
         return createdProject.save();
     }
 
+    public async update(project: {
+        id: string;
+        name: string;
+        colorId: string;
+    }): Promise<ProjectEntity> {
+        await this.projectModel.updateOne({_id: project.id}, project);
+        return this.projectModel.findById(project.id);
+    }
+
     public async delete(id: string): Promise<ProjectEntity> {
         return this.projectModel.findByIdAndDelete(id);
     }
