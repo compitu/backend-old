@@ -23,7 +23,7 @@ export class ProjectsController {
         @Body() createProjectDto: CreateProjectDto
     ): Promise<{id: string; name: string; colorId: string}> {
         const project = await this.projectService.create(createProjectDto);
-        return {id: project.id, name: project.name, colorId: project.colorId};
+        return {id: project._id, name: project.name, colorId: project.colorId};
     }
 
     @UseGuards(JwtAuthGuard)

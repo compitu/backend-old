@@ -16,6 +16,19 @@ export class TagsService {
         return createdTag.save();
     }
 
+    public async update(tag: {
+        id: string;
+        name: string;
+        colorId: string;
+    }): Promise<TagEntity> {
+        await this.tagModel.updateOne({_id: tag.id}, tag);
+        return this.tagModel.findById(tag.id);
+    }
+
+    public async delete(id: string): Promise<TagEntity> {
+        return this.tagModel.findByIdAndDelete(id);
+    }
+
     public async findMany(userId: string): Promise<TagEntity[]> {
         return this.tagModel.find({userId}).exec();
     }
