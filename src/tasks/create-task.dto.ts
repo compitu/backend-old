@@ -27,10 +27,9 @@ export class CreateTaskDto {
     @Length(1)
     readonly userId: string;
 
-    @IsDate({always: false})
+    @IsDate()
     readonly due: Date;
 
-    @IsString({each: true})
     @IsArray()
     readonly tags: string[];
 }
