@@ -19,6 +19,11 @@ import {CreateLoginDto} from './create-login.dto';
 import {JwtAuthGuard} from './jwt-auth.guard';
 import {TokenService} from './token.service';
 
+interface Tokens {
+    access: string;
+    refresh: string;
+}
+
 @Controller('auth')
 export class AuthController {
     constructor(
@@ -58,7 +63,7 @@ export class AuthController {
     }
 
     @Post('login')
-    async login(@Body() createLoginDto: CreateLoginDto): Promise<unknown> {
+    async login(@Body() createLoginDto: CreateLoginDto): Promise<Tokens> {
         const email = createLoginDto.email;
         const password = createLoginDto.password;
 
@@ -79,7 +84,7 @@ export class AuthController {
     }
 
     @Post('refresh')
-    async refresh(@Body('refresh') refreshToken: string): Promise<unknown> {
+    async refresh(@Body('refresh') refreshToken: string): Promise<Tokens> {
         const data = await this.tokenService.verifyRefreshToken(refreshToken);
 
         if (!data) {
