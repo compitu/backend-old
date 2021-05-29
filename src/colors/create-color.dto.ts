@@ -1,4 +1,4 @@
-import {IsDefined, IsString, Length} from 'class-validator';
+import {IsBoolean, IsDefined, IsString, Length} from 'class-validator';
 
 export class CreateColorDto {
     @IsDefined()
@@ -10,4 +10,8 @@ export class CreateColorDto {
     @IsString()
     @Length(1)
     readonly hexCode: string;
+
+    @IsDefined()
+    @IsBoolean()
+    readonly default: boolean;
 }

@@ -4,6 +4,13 @@ import {Color} from './color.entity';
 import {ColorsService} from './colors.service';
 import {CreateColorDto} from './create-color.dto';
 
+interface ColorResponse {
+    id: string;
+    name: string;
+    hexCode: string;
+    default: boolean;
+}
+
 @Controller('colors')
 export class ColorController {
     public constructor(private readonly colorsService: ColorsService) {}
@@ -16,8 +23,14 @@ export class ColorController {
 
     @UseGuards(JwtAuthGuard)
     @Get()
-    async findAll(): Promise<Color[]> {
-        return this.colorsService.findAll();
+    async findAll(): Promise<ColorResponse[]> {
+        const colors = await this.colorsService.findAll();
+        return colors.map(c => ({
+            id: c._id,
+            name: c.name,
+            hexCode: c.hexCode,
+            default: c.default,
+        }));
     }
 
     @UseGuards(JwtAuthGuard)

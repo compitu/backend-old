@@ -8,6 +8,9 @@ export class Color extends Document {
 
     @Prop()
     hexCode: string;
+
+    @Prop()
+    default: boolean;
 }
 
 export const ColorSchema = SchemaFactory.createForClass(Color);
