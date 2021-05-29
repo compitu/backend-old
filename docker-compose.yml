@@ -1,10 +1,32 @@
-version: "3"
+version: "2"
 
 services:
   db:
-    image: mongo
+    image: mongo:latest
+    container_name: db_mongo
     restart: always
     ports:
-    - 27017:27017
+      - 27017:27017
+    networks:
+      - compitu
+  compitu:
+    build: .
+    image: compitu
+    container_name: backend
+    ports:
+    - 3000:3000
+    depends_on:
+      - db
     environment:
-      MONGODB_DATABASE: compitu-db
+      - JWT_ACCESS_SECRET_KEY=secretKey
+      - JWT_REFRESH_SECRET_KEY=secretKey@
+      - JWT_ACCESS_EXPIRE_IN=1h
+      - JWT_REFRESH_EXPIRE_IN=14d
+      - SEEDER_PATH=/build/data/
+      - DB_URI=mongodb://db_mongo/compitu
+    networks:
+      - compitu
+networks:
+  compitu:
+    name: compitu
+    driver: bridge
