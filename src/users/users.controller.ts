@@ -16,4 +16,18 @@ export class UsersController {
         const updatedUser = await this.usersService.update(user);
         return this.usersService.fromDb(updatedUser);
     }
+
+    @UseGuards(JwtAuthGuard)
+    @Put(':id/password')
+    async changePassword(
+        @Param('id') id: string,
+        @Body() data: {oldPass: string; newPass: string}
+    ): Promise<Pick<User, 'id' | 'name' | 'email'>> {
+        const updatedUser = await this.usersService.changePassword({
+            userId: id,
+            oldPass: data.oldPass,
+            newPass: data.newPass,
+        });
+        return this.usersService.fromDb(updatedUser);
+    }
 }
