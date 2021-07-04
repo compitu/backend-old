@@ -46,6 +46,7 @@ export class AuthController {
             name,
             email,
             password: hashedPassword,
+            darkTheme: false,
         } as User);
 
         const project = await this.projectService.create({
@@ -59,6 +60,7 @@ export class AuthController {
             id: user._id,
             name: user.name,
             email: user.email,
+            darkTheme: user.darkTheme,
         };
     }
 
@@ -120,6 +122,7 @@ export class AuthController {
                 id: user.id,
                 name: user.name,
                 email: user.email,
+                darkTheme: user.darkTheme,
             };
         } catch (e) {
             throw new UnauthorizedException();

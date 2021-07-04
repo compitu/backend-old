@@ -22,6 +22,10 @@ export class UsersService {
         return this.userModel.findById(user.id);
     }
 
+    async delete(id: string): Promise<{ok?: number; n?: number}> {
+        return this.userModel.deleteOne({_id: id});
+    }
+
     async changePassword(data: {
         userId: string;
         oldPass: string;
