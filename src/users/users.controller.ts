@@ -18,6 +18,19 @@ export class UsersController {
     }
 
     @UseGuards(JwtAuthGuard)
+    @Put(':id/darkTheme')
+    async updateDarkTheme(
+        @Param('id') id: string,
+        @Body() data: {darkTheme: boolean}
+    ): Promise<{id: string; darkTheme: boolean}> {
+        const updatedUser = await this.usersService.updateDarkTheme({
+            id,
+            darkTheme: data.darkTheme,
+        });
+        return {id: updatedUser._id, darkTheme: updatedUser.darkTheme};
+    }
+
+    @UseGuards(JwtAuthGuard)
     @Delete(':id')
     async delete(@Param('id') id: string): Promise<{ok?: number; n?: number}> {
         return this.usersService.delete(id);

@@ -22,6 +22,17 @@ export class UsersService {
         return this.userModel.findById(user.id);
     }
 
+    async updateDarkTheme(user: {
+        id: string;
+        darkTheme: boolean;
+    }): Promise<User> {
+        await this.userModel.updateOne(
+            {_id: user.id},
+            {darkTheme: user.darkTheme}
+        );
+        return this.userModel.findById(user.id);
+    }
+
     async delete(id: string): Promise<{ok?: number; n?: number}> {
         return this.userModel.deleteOne({_id: id});
     }
