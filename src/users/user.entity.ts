@@ -11,9 +11,6 @@ export class User extends Document {
 
     @Prop({type: String, required: true})
     password: string;
-
-    @Prop({type: Boolean})
-    darkTheme: boolean;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

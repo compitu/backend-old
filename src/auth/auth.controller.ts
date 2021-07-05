@@ -12,6 +12,7 @@ import {Request} from 'express';
 import {ProjectType} from '../projects/project-type';
 import {Project} from '../projects/project.entity';
 import {ProjectsService} from '../projects/projects.service';
+import {SettingsService} from '../settings/settings.service';
 import {CreateUserDto} from '../users/create-user.dto';
 import {User} from '../users/user.entity';
 import {UsersService} from '../users/users.service';
@@ -29,7 +30,8 @@ export class AuthController {
     constructor(
         private usersService: UsersService,
         private tokenService: TokenService,
-        private projectService: ProjectsService
+        private projectService: ProjectsService,
+        private settingsService: SettingsService
     ) {}
 
     @Post('register')
@@ -46,8 +48,12 @@ export class AuthController {
             name,
             email,
             password: hashedPassword,
-            darkTheme: false,
         } as User);
+
+        const settings = await this.settingsService.create({
+            userId: user._id,
+            darkTheme: false,
+        });
 
         const project = await this.projectService.create({
             name: 'Inbox',
@@ -60,7 +66,6 @@ export class AuthController {
             id: user._id,
             name: user.name,
             email: user.email,
-            darkTheme: user.darkTheme,
         };
     }
 
@@ -122,7 +127,6 @@ export class AuthController {
                 id: user.id,
                 name: user.name,
                 email: user.email,
-                darkTheme: user.darkTheme,
             };
         } catch (e) {
             throw new UnauthorizedException();

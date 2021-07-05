@@ -1,11 +1,15 @@
 import {Body, Controller, Delete, Param, Put, UseGuards} from '@nestjs/common';
 import {JwtAuthGuard} from '../auth/jwt-auth.guard';
+import {SettingsService} from '../settings/settings.service';
 import {User} from './user.entity';
 import {UsersService} from './users.service';
 
 @Controller('users')
 export class UsersController {
-    public constructor(private usersService: UsersService) {}
+    public constructor(
+        private usersService: UsersService,
+        private settingsService: SettingsService
+    ) {}
 
     @UseGuards(JwtAuthGuard)
     @Put(':id')
@@ -18,21 +22,9 @@ export class UsersController {
     }
 
     @UseGuards(JwtAuthGuard)
-    @Put(':id/darkTheme')
-    async updateDarkTheme(
-        @Param('id') id: string,
-        @Body() data: {darkTheme: boolean}
-    ): Promise<{id: string; darkTheme: boolean}> {
-        const updatedUser = await this.usersService.updateDarkTheme({
-            id,
-            darkTheme: data.darkTheme,
-        });
-        return {id: updatedUser._id, darkTheme: updatedUser.darkTheme};
-    }
-
-    @UseGuards(JwtAuthGuard)
     @Delete(':id')
     async delete(@Param('id') id: string): Promise<{ok?: number; n?: number}> {
+        await this.settingsService.delete(id);
         return this.usersService.delete(id);
     }
 

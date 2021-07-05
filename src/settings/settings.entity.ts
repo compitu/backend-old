@@ -2,13 +2,7 @@ import {Prop, Schema, SchemaFactory} from '@nestjs/mongoose';
 import {Document} from 'mongoose';
 
 @Schema()
-export class Tag extends Document {
-    @Prop({
-        type: String,
-        required: true,
-    })
-    name: string;
-
+export class Settings extends Document {
     @Prop({
         type: String,
         required: true,
@@ -16,10 +10,10 @@ export class Tag extends Document {
     userId: string;
 
     @Prop({
-        type: String,
+        type: Boolean,
         required: true,
     })
-    colorId: string;
+    darkTheme: boolean;
 }
 
-export const TagSchema = SchemaFactory.createForClass(Tag);
+export const SettingsSchema = SchemaFactory.createForClass(Settings);

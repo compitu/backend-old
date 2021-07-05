@@ -5,6 +5,7 @@ import {ColorsModule} from './colors/colors.module';
 import {DbModule} from './db.module';
 import {envValidationSchema} from './env-validation-schema';
 import {ProjectsModule} from './projects/projects.module';
+import {SettingsModule} from './settings/settings.module';
 import {TagsModule} from './tags/tags.module';
 import {TasksModule} from './tasks/tasks.module';
 import {UsersModule} from './users/users.module';
@@ -25,6 +26,7 @@ const ENV = process.env.NODE_ENV;
         ProjectsModule,
         TagsModule,
         TasksModule,
+        SettingsModule,
     ],
     controllers: [],
     providers: [],
