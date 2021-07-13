@@ -18,7 +18,7 @@ export class Task extends Document {
     @Prop({type: Date})
     due: Date;
 
-    @Prop({type: [String]})
+    @Prop({type: [String], required: false})
     tags: string[];
 }
 

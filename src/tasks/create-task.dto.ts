@@ -1,3 +1,4 @@
+import {Type} from 'class-transformer';
 import {
     IsArray,
     IsBoolean,
@@ -27,6 +28,7 @@ export class CreateTaskDto {
     @Length(1)
     readonly userId: string;
 
+    @Type(() => Date)
     @IsDate()
     readonly due: Date;
 

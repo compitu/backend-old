@@ -7,6 +7,7 @@ import {
     Post,
     Put,
     UseGuards,
+    ValidationPipe,
 } from '@nestjs/common';
 import {JwtAuthGuard} from '../auth/jwt-auth.guard';
 import {CreateTaskDto} from './create-task.dto';
@@ -18,7 +19,10 @@ export class TasksController {
 
     @UseGuards(JwtAuthGuard)
     @Post('tasks')
-    async create(@Body() createTaskDto: CreateTaskDto): Promise<TaskResponse> {
+    async create(
+        @Body(new ValidationPipe({transform: true}))
+        createTaskDto: CreateTaskDto
+    ): Promise<TaskResponse> {
         const task = await this.taskService.create(createTaskDto);
         return this.taskService.fromDb(task);
     }
