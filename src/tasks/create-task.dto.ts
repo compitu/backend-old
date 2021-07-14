@@ -4,6 +4,7 @@ import {
     IsBoolean,
     IsDate,
     IsDefined,
+    IsOptional,
     IsString,
     Length,
 } from 'class-validator';
@@ -30,8 +31,10 @@ export class CreateTaskDto {
 
     @Type(() => Date)
     @IsDate()
+    @IsOptional()
     readonly due: Date;
 
     @IsArray()
+    @IsOptional()
     readonly tags: string[];
 }
