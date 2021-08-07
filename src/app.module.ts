@@ -8,6 +8,7 @@ import {ProjectsModule} from './projects/projects.module';
 import {SettingsModule} from './settings/settings.module';
 import {TagsModule} from './tags/tags.module';
 import {TasksModule} from './tasks/tasks.module';
+import {TimezonesModule} from './timezones/timezones.module';
 import {UsersModule} from './users/users.module';
 
 const ENV = process.env.NODE_ENV;
@@ -27,6 +28,7 @@ const ENV = process.env.NODE_ENV;
         TagsModule,
         TasksModule,
         SettingsModule,
+        TimezonesModule,
     ],
     controllers: [],
     providers: [],

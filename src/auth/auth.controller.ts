@@ -53,6 +53,7 @@ export class AuthController {
         const settings = await this.settingsService.create({
             userId: user._id,
             darkTheme: false,
+            timezone: 'UTC',
         });
 
         const project = await this.projectService.create({

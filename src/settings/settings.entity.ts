@@ -14,6 +14,12 @@ export class Settings extends Document {
         required: true,
     })
     darkTheme: boolean;
+
+    @Prop({
+        type: String,
+        required: true,
+    })
+    timezone: string;
 }
 
 export const SettingsSchema = SchemaFactory.createForClass(Settings);

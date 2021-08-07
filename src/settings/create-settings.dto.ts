@@ -9,4 +9,9 @@ export class CreateSettingsDto {
     @IsDefined()
     @IsBoolean()
     readonly darkTheme: boolean;
+
+    @IsDefined()
+    @IsString()
+    @Length(1)
+    readonly timezone: string;
 }

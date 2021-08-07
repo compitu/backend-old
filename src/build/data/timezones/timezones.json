@@ -1,0 +1,1904 @@
+[
+  {
+    "value": "UTC",
+    "continent": "",
+    "offsetInMin": 0,
+    "label": "UTC+00:00"
+  },
+  {
+    "value": "Africa/Abidjan",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Abidjan, Abobo, Bouaké, Daloa"
+  },
+  {
+    "value": "Africa/Accra",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Accra, Kumasi, Tamale, Takoradi"
+  },
+  {
+    "value": "Africa/Addis_Ababa",
+    "continent": "Africa",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 East Africa Time - Addis Ababa, Dire Dawa, Mek'ele, Nazrēt"
+  },
+  {
+    "value": "Africa/Algiers",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 Central European Time - Algiers, Boumerdas, Oran, Tébessa"
+  },
+  {
+    "value": "Africa/Asmara",
+    "continent": "Africa",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 East Africa Time - Asmara, Keren, Massawa, Assab"
+  },
+  {
+    "value": "Africa/Bamako",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Bamako, Ségou, Sikasso, Mopti"
+  },
+  {
+    "value": "Africa/Bangui",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 West Africa Time - Bangui, Bimbo, Mbaïki, Berbérati"
+  },
+  {
+    "value": "Africa/Banjul",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Serekunda, Brikama, Bakau, Banjul"
+  },
+  {
+    "value": "Africa/Bissau",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Bissau, Bafatá"
+  },
+  {
+    "value": "Africa/Blantyre",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Central Africa Time - Lilongwe, Blantyre, Mzuzu, Zomba"
+  },
+  {
+    "value": "Africa/Brazzaville",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 West Africa Time - Brazzaville, Pointe-Noire, Dolisie, Kayes"
+  },
+  {
+    "value": "Africa/Bujumbura",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Central Africa Time - Bujumbura, Muyinga, Gitega, Ruyigi"
+  },
+  {
+    "value": "Africa/Cairo",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Eastern European Time - Cairo, Alexandria, Giza, Port Said"
+  },
+  {
+    "value": "Africa/Casablanca",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+01:00 Western European Time - Casablanca, Rabat, Fès, Sale"
+  },
+  {
+    "value": "Africa/Conakry",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Camayenne, Conakry, Nzérékoré, Kindia"
+  },
+  {
+    "value": "Africa/Dakar",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Dakar, Pikine, Touba, Thiès"
+  },
+  {
+    "value": "Africa/Dar_es_Salaam",
+    "continent": "Africa",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 East Africa Time - Dar es Salaam, Mwanza, Zanzibar, Arusha"
+  },
+  {
+    "value": "Africa/Djibouti",
+    "continent": "Africa",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 East Africa Time - Djibouti, 'Ali Sabieh, Tadjourah, Obock"
+  },
+  {
+    "value": "Africa/Douala",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 West Africa Time - Douala, Yaoundé, Garoua, Kousséri"
+  },
+  {
+    "value": "Africa/El_Aaiun",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+01:00 Western European Time - Laayoune, Dakhla"
+  },
+  {
+    "value": "Africa/Freetown",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Freetown, Bo, Kenema, Koidu"
+  },
+  {
+    "value": "Africa/Gaborone",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Central Africa Time - Gaborone, Francistown, Molepolole, Selebi-Phikwe"
+  },
+  {
+    "value": "Africa/Harare",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Central Africa Time - Harare, Bulawayo, Chitungwiza, Mutare"
+  },
+  {
+    "value": "Africa/Johannesburg",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 South Africa Time - Cape Town, Durban, Johannesburg, Soweto"
+  },
+  {
+    "value": "Africa/Juba",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 East Africa Time - Juba, Winejok, Malakal, Wau"
+  },
+  {
+    "value": "Africa/Kampala",
+    "continent": "Africa",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 East Africa Time - Kampala, Gulu, Lira, Mbarara"
+  },
+  {
+    "value": "Africa/Khartoum",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Central Africa Time - Khartoum, Omdurman, Nyala, Port Sudan"
+  },
+  {
+    "value": "Africa/Kigali",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Central Africa Time - Kigali, Butare, Gitarama, Musanze"
+  },
+  {
+    "value": "Africa/Kinshasa",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 West Africa Time - Kinshasa, Masina, Kikwit, Mbandaka"
+  },
+  {
+    "value": "Africa/Lagos",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 West Africa Time - Lagos, Kano, Ibadan, Kaduna"
+  },
+  {
+    "value": "Africa/Libreville",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 West Africa Time - Libreville, Port-Gentil, Franceville, Oyem"
+  },
+  {
+    "value": "Africa/Lome",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Lomé, Sokodé, Kara, Atakpamé"
+  },
+  {
+    "value": "Africa/Luanda",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 West Africa Time - Luanda, N’dalatando, Huambo, Lobito"
+  },
+  {
+    "value": "Africa/Lubumbashi",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Central Africa Time - Lubumbashi, Mbuji-Mayi, Kisangani, Kananga"
+  },
+  {
+    "value": "Africa/Lusaka",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Central Africa Time - Lusaka, Kitwe, Ndola, Kabwe"
+  },
+  {
+    "value": "Africa/Malabo",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 West Africa Time - Bata, Malabo, Ebebiyin"
+  },
+  {
+    "value": "Africa/Maputo",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Central Africa Time - Maputo, Matola, Beira, Nampula"
+  },
+  {
+    "value": "Africa/Maseru",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 South Africa Time - Maseru, Mafeteng, Leribe, Maputsoe"
+  },
+  {
+    "value": "Africa/Mbabane",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 South Africa Time - Manzini, Mbabane, Lobamba"
+  },
+  {
+    "value": "Africa/Mogadishu",
+    "continent": "Africa",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 East Africa Time - Mogadishu, Hargeysa, Berbera, Kismayo"
+  },
+  {
+    "value": "Africa/Monrovia",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Monrovia, Gbarnga, Kakata, Bensonville"
+  },
+  {
+    "value": "Africa/Nairobi",
+    "continent": "Africa",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 East Africa Time - Nairobi, Mombasa, Nakuru, Eldoret"
+  },
+  {
+    "value": "Africa/Ndjamena",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 West Africa Time - N'Djamena, Moundou, Sarh, Abéché"
+  },
+  {
+    "value": "Africa/Niamey",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 West Africa Time - Niamey, Zinder, Maradi, Agadez"
+  },
+  {
+    "value": "Africa/Nouakchott",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Nouakchott, Nouadhibou, Néma, Kaédi"
+  },
+  {
+    "value": "Africa/Ouagadougou",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Ouagadougou, Bobo-Dioulasso, Koudougou, Ouahigouya"
+  },
+  {
+    "value": "Africa/Porto-Novo",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 West Africa Time - Cotonou, Abomey-Calavi, Djougou, Porto-Novo"
+  },
+  {
+    "value": "Africa/Sao_Tome",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - São Tomé"
+  },
+  {
+    "value": "Africa/Tripoli",
+    "continent": "Africa",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Eastern European Time - Tripoli, Benghazi, Mişrātah, Tarhuna"
+  },
+  {
+    "value": "Africa/Tunis",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+01:00 Central European Time - Tunis, Sfax, Sousse, Kairouan"
+  },
+  {
+    "value": "Africa/Windhoek",
+    "continent": "Africa",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central Africa Time - Windhoek, Rundu, Walvis Bay, Oshakati"
+  },
+  {
+    "value": "America/Adak",
+    "continent": "North America",
+    "offsetInMin": -600,
+    "label": "UTC-09:00 Hawaii-Aleutian Time - Adak"
+  },
+  {
+    "value": "America/Anchorage",
+    "continent": "North America",
+    "offsetInMin": -540,
+    "label": "UTC-08:00 Alaska Time - Anchorage, Juneau, Fairbanks, Eagle River"
+  },
+  {
+    "value": "America/Anguilla",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - The Valley"
+  },
+  {
+    "value": "America/Antigua",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Saint John’s"
+  },
+  {
+    "value": "America/Argentina/Buenos_Aires",
+    "continent": "South America",
+    "offsetInMin": -180,
+    "label": "UTC-03:00 Argentina Time - Buenos Aires, Córdoba, Rosario, Mendoza"
+  },
+  {
+    "value": "America/Aruba",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Oranjestad, Tanki Leendert, San Nicolas"
+  },
+  {
+    "value": "America/Asuncion",
+    "continent": "South America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Paraguay Time - Asunción, Ciudad del Este, San Lorenzo, Capiatá"
+  },
+  {
+    "value": "America/Atikokan",
+    "continent": "North America",
+    "offsetInMin": -300,
+    "label": "UTC-05:00 Eastern Time - Atikokan"
+  },
+  {
+    "value": "America/Barbados",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Bridgetown"
+  },
+  {
+    "value": "America/Belize",
+    "continent": "North America",
+    "offsetInMin": -360,
+    "label": "UTC-06:00 Central Time - Belize City, San Ignacio, Orange Walk, Belmopan"
+  },
+  {
+    "value": "America/Blanc-Sablon",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Lévis"
+  },
+  {
+    "value": "America/Bogota",
+    "continent": "South America",
+    "offsetInMin": -300,
+    "label": "UTC-05:00 Colombia Time - Bogotá, Cali, Medellín, Barranquilla"
+  },
+  {
+    "value": "America/Cancun",
+    "continent": "North America",
+    "offsetInMin": -300,
+    "label": "UTC-05:00 Eastern Time - Cancún, Chetumal, Playa del Carmen, Cozumel"
+  },
+  {
+    "value": "America/Caracas",
+    "continent": "South America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Venezuela Time - Caracas, Maracaibo, Maracay, Valencia"
+  },
+  {
+    "value": "America/Cayenne",
+    "continent": "South America",
+    "offsetInMin": -180,
+    "label": "UTC-03:00 French Guiana Time - Cayenne, Matoury, Saint-Laurent-du-Maroni, Kourou"
+  },
+  {
+    "value": "America/Cayman",
+    "continent": "North America",
+    "offsetInMin": -300,
+    "label": "UTC-05:00 Eastern Time - George Town"
+  },
+  {
+    "value": "America/Chicago",
+    "continent": "North America",
+    "offsetInMin": -360,
+    "label": "UTC-05:00 Central Time - Chicago, Houston, San Antonio, Dallas"
+  },
+  {
+    "value": "America/Costa_Rica",
+    "continent": "North America",
+    "offsetInMin": -360,
+    "label": "UTC-06:00 Central Time - San José, Limón, San Francisco, Alajuela"
+  },
+  {
+    "value": "America/Curacao",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Willemstad"
+  },
+  {
+    "value": "America/Danmarkshavn",
+    "continent": "North America",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Danmarkshavn"
+  },
+  {
+    "value": "America/Denver",
+    "continent": "North America",
+    "offsetInMin": -420,
+    "label": "UTC-06:00 Mountain Time - Denver, El Paso, Albuquerque, Colorado Springs"
+  },
+  {
+    "value": "America/Dominica",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Roseau"
+  },
+  {
+    "value": "America/Edmonton",
+    "continent": "North America",
+    "offsetInMin": -420,
+    "label": "UTC-06:00 Mountain Time - Calgary, Edmonton, Fort McMurray, Red Deer"
+  },
+  {
+    "value": "America/El_Salvador",
+    "continent": "North America",
+    "offsetInMin": -360,
+    "label": "UTC-06:00 Central Time - San Salvador, Soyapango, Santa Ana, San Miguel"
+  },
+  {
+    "value": "America/Godthab",
+    "continent": "North America",
+    "offsetInMin": -180,
+    "label": "UTC-02:00 West Greenland Time - Nuuk"
+  },
+  {
+    "value": "America/Grand_Turk",
+    "continent": "North America",
+    "offsetInMin": -300,
+    "label": "UTC-04:00 Eastern Time - Cockburn Town"
+  },
+  {
+    "value": "America/Grenada",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Saint George's"
+  },
+  {
+    "value": "America/Guadeloupe",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Les Abymes, Baie-Mahault, Le Gosier, Petit-Bourg"
+  },
+  {
+    "value": "America/Guatemala",
+    "continent": "North America",
+    "offsetInMin": -360,
+    "label": "UTC-06:00 Central Time - Guatemala City, Mixco, Villa Nueva, Petapa"
+  },
+  {
+    "value": "America/Guayaquil",
+    "continent": "South America",
+    "offsetInMin": -300,
+    "label": "UTC-05:00 Ecuador Time - Guayaquil, Quito, Cuenca, Santo Domingo de los Colorados"
+  },
+  {
+    "value": "America/Guyana",
+    "continent": "South America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Guyana Time - Georgetown, Linden, New Amsterdam"
+  },
+  {
+    "value": "America/Halifax",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-03:00 Atlantic Time - Halifax, Moncton, Sydney, Dartmouth"
+  },
+  {
+    "value": "America/Havana",
+    "continent": "North America",
+    "offsetInMin": -300,
+    "label": "UTC-04:00 Cuba Time - Havana, Santiago de Cuba, Camagüey, Holguín"
+  },
+  {
+    "value": "America/Hermosillo",
+    "continent": "North America",
+    "offsetInMin": -420,
+    "label": "UTC-07:00 Mexican Pacific Time - Hermosillo, Ciudad Obregón, Nogales, San Luis Río Colorado"
+  },
+  {
+    "value": "America/Jamaica",
+    "continent": "North America",
+    "offsetInMin": -300,
+    "label": "UTC-05:00 Eastern Time - Kingston, New Kingston, Spanish Town, Portmore"
+  },
+  {
+    "value": "America/Kralendijk",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Kralendijk"
+  },
+  {
+    "value": "America/La_Paz",
+    "continent": "South America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Bolivia Time - Santa Cruz de la Sierra, Cochabamba, La Paz, Sucre"
+  },
+  {
+    "value": "America/Lima",
+    "continent": "South America",
+    "offsetInMin": -300,
+    "label": "UTC-05:00 Peru Time - Lima, Arequipa, Callao, Trujillo"
+  },
+  {
+    "value": "America/Los_Angeles",
+    "continent": "North America",
+    "offsetInMin": -480,
+    "label": "UTC-07:00 Pacific Time - Los Angeles, San Diego, San Jose, San Francisco"
+  },
+  {
+    "value": "America/Lower_Princes",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Philipsburg"
+  },
+  {
+    "value": "America/Managua",
+    "continent": "North America",
+    "offsetInMin": -360,
+    "label": "UTC-06:00 Central Time - Managua, León, Masaya, Chinandega"
+  },
+  {
+    "value": "America/Manaus",
+    "continent": "South America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Amazon Time - Manaus, Campo Grande, Cuiabá, Porto Velho"
+  },
+  {
+    "value": "America/Marigot",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Marigot"
+  },
+  {
+    "value": "America/Martinique",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Fort-de-France, Le Lamentin, Le Robert, Sainte-Marie"
+  },
+  {
+    "value": "America/Mexico_City",
+    "continent": "North America",
+    "offsetInMin": -360,
+    "label": "UTC-05:00 Central Time - Mexico City, Iztapalapa, Ecatepec de Morelos, Guadalajara"
+  },
+  {
+    "value": "America/Miquelon",
+    "continent": "North America",
+    "offsetInMin": -180,
+    "label": "UTC-02:00 St. Pierre & Miquelon Time - Saint-Pierre"
+  },
+  {
+    "value": "America/Montevideo",
+    "continent": "South America",
+    "offsetInMin": -180,
+    "label": "UTC-03:00 Uruguay Time - Montevideo, Salto, Paysandú, Las Piedras"
+  },
+  {
+    "value": "America/Montserrat",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Brades, Plymouth"
+  },
+  {
+    "value": "America/Nassau",
+    "continent": "North America",
+    "offsetInMin": -300,
+    "label": "UTC-04:00 Eastern Time - Nassau, Lucaya, Freeport"
+  },
+  {
+    "value": "America/New_York",
+    "continent": "North America",
+    "offsetInMin": -300,
+    "label": "UTC-04:00 Eastern Time - New York City, Brooklyn, Queens, Philadelphia"
+  },
+  {
+    "value": "America/Noronha",
+    "continent": "South America",
+    "offsetInMin": -120,
+    "label": "UTC-02:00 Fernando de Noronha Time - Noronha"
+  },
+  {
+    "value": "America/Ojinaga",
+    "continent": "North America",
+    "offsetInMin": -420,
+    "label": "UTC-06:00 Mountain Time - Ciudad Juárez, Chihuahua, Culiacán, Mazatlán"
+  },
+  {
+    "value": "America/Panama",
+    "continent": "North America",
+    "offsetInMin": -300,
+    "label": "UTC-05:00 Eastern Time - Panamá, San Miguelito, Juan Díaz, David"
+  },
+  {
+    "value": "America/Paramaribo",
+    "continent": "South America",
+    "offsetInMin": -180,
+    "label": "UTC-03:00 Suriname Time - Paramaribo, Lelydorp"
+  },
+  {
+    "value": "America/Phoenix",
+    "continent": "North America",
+    "offsetInMin": -420,
+    "label": "UTC-07:00 Mountain Time - Phoenix, Tucson, Mesa, Chandler"
+  },
+  {
+    "value": "America/Port-au-Prince",
+    "continent": "North America",
+    "offsetInMin": -300,
+    "label": "UTC-04:00 Eastern Time - Port-au-Prince, Carrefour, Delmas 73, Pétionville"
+  },
+  {
+    "value": "America/Port_of_Spain",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Chaguanas, Mon Repos, San Fernando, Port of Spain"
+  },
+  {
+    "value": "America/Puerto_Rico",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - San Juan, Bayamón, Carolina, Ponce"
+  },
+  {
+    "value": "America/Punta_Arenas",
+    "continent": "South America",
+    "offsetInMin": -180,
+    "label": "UTC-03:00 Chile Time - Punta Arenas, Puerto Natales"
+  },
+  {
+    "value": "America/Regina",
+    "continent": "North America",
+    "offsetInMin": -360,
+    "label": "UTC-06:00 Central Time - Saskatoon, Regina, Prince Albert, Moose Jaw"
+  },
+  {
+    "value": "America/Rio_Branco",
+    "continent": "South America",
+    "offsetInMin": -300,
+    "label": "UTC-05:00 Acre Time - Rio Branco, Cruzeiro do Sul, Sena Madureira, Eirunepé"
+  },
+  {
+    "value": "America/Santiago",
+    "continent": "South America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Chile Time - Santiago, Puente Alto, Antofagasta, Viña del Mar"
+  },
+  {
+    "value": "America/Santo_Domingo",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Santo Domingo, Santiago de los Caballeros, Santo Domingo Oeste, Santo Domingo Este"
+  },
+  {
+    "value": "America/Sao_Paulo",
+    "continent": "South America",
+    "offsetInMin": -180,
+    "label": "UTC-03:00 Brasilia Time - São Paulo, Rio de Janeiro, Salvador, Fortaleza"
+  },
+  {
+    "value": "America/Scoresbysund",
+    "continent": "North America",
+    "offsetInMin": -60,
+    "label": "UTC+00:00 East Greenland Time - Scoresbysund"
+  },
+  {
+    "value": "America/St_Barthelemy",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Gustavia"
+  },
+  {
+    "value": "America/St_Johns",
+    "continent": "North America",
+    "offsetInMin": -210,
+    "label": "UTC-02:30 Newfoundland Time - St. John's, Mount Pearl, Corner Brook, Conception Bay South"
+  },
+  {
+    "value": "America/St_Kitts",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Basseterre"
+  },
+  {
+    "value": "America/St_Lucia",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Castries"
+  },
+  {
+    "value": "America/St_Thomas",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Saint Croix, Charlotte Amalie"
+  },
+  {
+    "value": "America/St_Vincent",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Kingstown, Kingstown Park"
+  },
+  {
+    "value": "America/Tegucigalpa",
+    "continent": "North America",
+    "offsetInMin": -360,
+    "label": "UTC-06:00 Central Time - Tegucigalpa, San Pedro Sula, Choloma, La Ceiba"
+  },
+  {
+    "value": "America/Thule",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-03:00 Atlantic Time - Thule"
+  },
+  {
+    "value": "America/Tijuana",
+    "continent": "North America",
+    "offsetInMin": -480,
+    "label": "UTC-07:00 Pacific Time - Tijuana, Mexicali, Ensenada, Rosarito"
+  },
+  {
+    "value": "America/Toronto",
+    "continent": "North America",
+    "offsetInMin": -300,
+    "label": "UTC-04:00 Eastern Time - Toronto, Montréal, Ottawa, Mississauga"
+  },
+  {
+    "value": "America/Tortola",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-04:00 Atlantic Time - Road Town"
+  },
+  {
+    "value": "America/Vancouver",
+    "continent": "North America",
+    "offsetInMin": -480,
+    "label": "UTC-07:00 Pacific Time - Vancouver, Surrey, Okanagan, Victoria"
+  },
+  {
+    "value": "America/Whitehorse",
+    "continent": "North America",
+    "offsetInMin": -420,
+    "label": "UTC-07:00 Mountain Time - Whitehorse, Fort St. John, Creston, Dawson"
+  },
+  {
+    "value": "America/Winnipeg",
+    "continent": "North America",
+    "offsetInMin": -360,
+    "label": "UTC-05:00 Central Time - Winnipeg, Brandon, Kenora, Rainy River"
+  },
+  {
+    "value": "Antarctica/Casey",
+    "continent": "Antarctica",
+    "offsetInMin": 660,
+    "label": "UTC+11:00 Casey Time - Casey"
+  },
+  {
+    "value": "Antarctica/Davis",
+    "continent": "Antarctica",
+    "offsetInMin": 420,
+    "label": "UTC+07:00 Davis Time - Davis"
+  },
+  {
+    "value": "Antarctica/DumontDUrville",
+    "continent": "Antarctica",
+    "offsetInMin": 600,
+    "label": "UTC+10:00 Dumont-d’Urville Time - DumontDUrville"
+  },
+  {
+    "value": "Antarctica/Mawson",
+    "continent": "Antarctica",
+    "offsetInMin": 300,
+    "label": "UTC+05:00 Mawson Time - Mawson"
+  },
+  {
+    "value": "Antarctica/McMurdo",
+    "continent": "Antarctica",
+    "offsetInMin": 720,
+    "label": "UTC+12:00 New Zealand Time - McMurdo"
+  },
+  {
+    "value": "Antarctica/Palmer",
+    "continent": "Antarctica",
+    "offsetInMin": -180,
+    "label": "UTC-03:00 Chile Time - Palmer, Rothera"
+  },
+  {
+    "value": "Antarctica/Syowa",
+    "continent": "Antarctica",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 Syowa Time - Syowa"
+  },
+  {
+    "value": "Antarctica/Troll",
+    "continent": "Antarctica",
+    "offsetInMin": 0,
+    "label": "UTC+02:00 Greenwich Mean Time - Troll"
+  },
+  {
+    "value": "Antarctica/Vostok",
+    "continent": "Antarctica",
+    "offsetInMin": 360,
+    "label": "UTC+06:00 Vostok Time - Vostok"
+  },
+  {
+    "value": "Arctic/Longyearbyen",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Longyearbyen"
+  },
+  {
+    "value": "Asia/Aden",
+    "continent": "Asia",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 Arabian Time - Sanaa, Al Ḩudaydah, Taiz, Aden"
+  },
+  {
+    "value": "Asia/Almaty",
+    "continent": "Asia",
+    "offsetInMin": 360,
+    "label": "UTC+06:00 East Kazakhstan Time - Almaty, Karagandy, Shymkent, Taraz"
+  },
+  {
+    "value": "Asia/Amman",
+    "continent": "Asia",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Amman, Zarqa, Irbid, Russeifa"
+  },
+  {
+    "value": "Asia/Ashgabat",
+    "continent": "Asia",
+    "offsetInMin": 300,
+    "label": "UTC+05:00 Turkmenistan Time - Ashgabat, Türkmenabat, Daşoguz, Mary"
+  },
+  {
+    "value": "Asia/Baghdad",
+    "continent": "Asia",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 Arabian Time - Baghdad, Basrah, Al Mawşil al Jadīdah, Al Başrah al Qadīmah"
+  },
+  {
+    "value": "Asia/Bahrain",
+    "continent": "Asia",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 Arabian Time - Manama, Al Muharraq, Ar Rifā‘, Dār Kulayb"
+  },
+  {
+    "value": "Asia/Baku",
+    "continent": "Asia",
+    "offsetInMin": 240,
+    "label": "UTC+04:00 Azerbaijan Time - Baku, Ganja, Sumqayıt, Lankaran"
+  },
+  {
+    "value": "Asia/Bangkok",
+    "continent": "Asia",
+    "offsetInMin": 420,
+    "label": "UTC+07:00 Indochina Time - Bangkok, Samut Prakan, Mueang Nonthaburi, Udon Thani"
+  },
+  {
+    "value": "Asia/Beirut",
+    "continent": "Asia",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Beirut, Ra’s Bayrūt, Tripoli, Sidon"
+  },
+  {
+    "value": "Asia/Bishkek",
+    "continent": "Asia",
+    "offsetInMin": 360,
+    "label": "UTC+06:00 Kyrgyzstan Time - Bishkek, Osh, Jalal-Abad, Karakol"
+  },
+  {
+    "value": "Asia/Brunei",
+    "continent": "Asia",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 Brunei Darussalam Time - Bandar Seri Begawan, Kuala Belait, Seria, Tutong"
+  },
+  {
+    "value": "Asia/Chita",
+    "continent": "Europe",
+    "offsetInMin": 540,
+    "label": "UTC+09:00 Yakutsk Time - Chita, Yakutsk, Blagoveshchensk, Belogorsk"
+  },
+  {
+    "value": "Asia/Colombo",
+    "continent": "Asia",
+    "offsetInMin": 330,
+    "label": "UTC+05:30 India Time - Colombo, Dehiwala-Mount Lavinia, Moratuwa, Jaffna"
+  },
+  {
+    "value": "Asia/Damascus",
+    "continent": "Asia",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Aleppo, Damascus, Homs, Ḩamāh"
+  },
+  {
+    "value": "Asia/Dhaka",
+    "continent": "Asia",
+    "offsetInMin": 360,
+    "label": "UTC+06:00 Bangladesh Time - Dhaka, Chattogram, Khulna, Rājshāhi"
+  },
+  {
+    "value": "Asia/Dili",
+    "continent": "Oceania",
+    "offsetInMin": 540,
+    "label": "UTC+09:00 East Timor Time - Dili, Maliana, Suai, Likisá"
+  },
+  {
+    "value": "Asia/Dubai",
+    "continent": "Asia",
+    "offsetInMin": 240,
+    "label": "UTC+04:00 Gulf Time - Dubai, Sharjah, Abu Dhabi, Ajman City"
+  },
+  {
+    "value": "Asia/Dushanbe",
+    "continent": "Asia",
+    "offsetInMin": 300,
+    "label": "UTC+05:00 Tajikistan Time - Dushanbe, Khujand, Kŭlob, Bokhtar"
+  },
+  {
+    "value": "Asia/Hebron",
+    "continent": "Asia",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - East Jerusalem, Gaza, Khān Yūnis, Jabālyā"
+  },
+  {
+    "value": "Asia/Ho_Chi_Minh",
+    "continent": "Asia",
+    "offsetInMin": 420,
+    "label": "UTC+07:00 Indochina Time - Ho Chi Minh City, Da Nang, Biên Hòa, Nha Trang"
+  },
+  {
+    "value": "Asia/Hong_Kong",
+    "continent": "Asia",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 Hong Kong Time - Hong Kong, Kowloon, Tsuen Wan, Yuen Long Kau Hui"
+  },
+  {
+    "value": "Asia/Hovd",
+    "continent": "Asia",
+    "offsetInMin": 420,
+    "label": "UTC+07:00 Hovd Time - Khovd, Ölgii, Ulaangom, Uliastay"
+  },
+  {
+    "value": "Asia/Irkutsk",
+    "continent": "Europe",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 Irkutsk Time - Irkutsk, Ulan-Ude, Bratsk, Angarsk"
+  },
+  {
+    "value": "Asia/Jakarta",
+    "continent": "Asia",
+    "offsetInMin": 420,
+    "label": "UTC+07:00 Western Indonesia Time - Jakarta, Surabaya, Medan, Bandung"
+  },
+  {
+    "value": "Asia/Jayapura",
+    "continent": "Asia",
+    "offsetInMin": 540,
+    "label": "UTC+09:00 Eastern Indonesia Time - Ambon, Jayapura, Sorong, Ternate"
+  },
+  {
+    "value": "Asia/Jerusalem",
+    "continent": "Asia",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Israel Time - Jerusalem, Tel Aviv, West Jerusalem, Haifa"
+  },
+  {
+    "value": "Asia/Kabul",
+    "continent": "Asia",
+    "offsetInMin": 270,
+    "label": "UTC+04:30 Afghanistan Time - Kabul, Kandahār, Mazār-e Sharīf, Herāt"
+  },
+  {
+    "value": "Asia/Kamchatka",
+    "continent": "Europe",
+    "offsetInMin": 720,
+    "label": "UTC+12:00 Petropavlovsk-Kamchatski Time - Petropavlovsk-Kamchatsky, Yelizovo, Vilyuchinsk, Anadyr"
+  },
+  {
+    "value": "Asia/Karachi",
+    "continent": "Asia",
+    "offsetInMin": 300,
+    "label": "UTC+05:00 Pakistan Time - Karachi, Lahore, Faisalabad, Rawalpindi"
+  },
+  {
+    "value": "Asia/Kathmandu",
+    "continent": "Asia",
+    "offsetInMin": 345,
+    "label": "UTC+05:45 Nepal Time - Kathmandu, Pokhara, Pātan, Biratnagar"
+  },
+  {
+    "value": "Asia/Kolkata",
+    "continent": "Asia",
+    "offsetInMin": 330,
+    "label": "UTC+05:30 India Time - Mumbai, Delhi, Bengaluru, Kolkata"
+  },
+  {
+    "value": "Asia/Kuala_Lumpur",
+    "continent": "Asia",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 Malaysia Time - Kota Bharu, Kuala Lumpur, Klang, Kampung Baru Subang"
+  },
+  {
+    "value": "Asia/Kuwait",
+    "continent": "Asia",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 Arabian Time - Al Aḩmadī, Ḩawallī, As Sālimīyah, Şabāḩ as Sālim"
+  },
+  {
+    "value": "Asia/Macau",
+    "continent": "Asia",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 China Time - Macau"
+  },
+  {
+    "value": "Asia/Makassar",
+    "continent": "Asia",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 Central Indonesia Time - Makassar, Denpasar, City of Balikpapan, Banjarmasin"
+  },
+  {
+    "value": "Asia/Manila",
+    "continent": "Asia",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 Philippine Time - Quezon City, Manila, Caloocan City, Budta"
+  },
+  {
+    "value": "Asia/Muscat",
+    "continent": "Asia",
+    "offsetInMin": 240,
+    "label": "UTC+04:00 Gulf Time - Muscat, Seeb, Şalālah, Bawshar"
+  },
+  {
+    "value": "Asia/Nicosia",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Nicosia, Limassol, Larnaca, Stróvolos"
+  },
+  {
+    "value": "Asia/Novosibirsk",
+    "continent": "Europe",
+    "offsetInMin": 420,
+    "label": "UTC+07:00 Novosibirsk Time - Novosibirsk, Krasnoyarsk, Barnaul, Novokuznetsk"
+  },
+  {
+    "value": "Asia/Omsk",
+    "continent": "Europe",
+    "offsetInMin": 360,
+    "label": "UTC+06:00 Omsk Time - Omsk, Tara, Kalachinsk"
+  },
+  {
+    "value": "Asia/Phnom_Penh",
+    "continent": "Asia",
+    "offsetInMin": 420,
+    "label": "UTC+07:00 Indochina Time - Phnom Penh, Takeo, Sihanoukville, Battambang"
+  },
+  {
+    "value": "Asia/Pyongyang",
+    "continent": "Asia",
+    "offsetInMin": 540,
+    "label": "UTC+09:00 Korean Time - Pyongyang, Hamhŭng, Namp’o, Sunch’ŏn"
+  },
+  {
+    "value": "Asia/Qatar",
+    "continent": "Asia",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 Arabian Time - Doha, Ar Rayyān, Umm Şalāl Muḩammad, Al Wakrah"
+  },
+  {
+    "value": "Asia/Qyzylorda",
+    "continent": "Asia",
+    "offsetInMin": 300,
+    "label": "UTC+05:00 West Kazakhstan Time - Kyzylorda, Aktobe, Oral, Atyrau"
+  },
+  {
+    "value": "Asia/Riyadh",
+    "continent": "Asia",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 Arabian Time - Riyadh, Jeddah, Mecca, Medina"
+  },
+  {
+    "value": "Asia/Sakhalin",
+    "continent": "Europe",
+    "offsetInMin": 660,
+    "label": "UTC+11:00 Sakhalin Time - Yuzhno-Sakhalinsk, Magadan, Korsakov, Kholmsk"
+  },
+  {
+    "value": "Asia/Seoul",
+    "continent": "Asia",
+    "offsetInMin": 540,
+    "label": "UTC+09:00 Korean Time - Seoul, Busan, Incheon, Daegu"
+  },
+  {
+    "value": "Asia/Shanghai",
+    "continent": "Asia",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 China Time - Shanghai, Beijing, Tianjin, Guangzhou"
+  },
+  {
+    "value": "Asia/Singapore",
+    "continent": "Asia",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 Singapore Time - Singapore, Woodlands"
+  },
+  {
+    "value": "Asia/Taipei",
+    "continent": "Asia",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 Taipei Time - Taipei, Kaohsiung, Taichung, Tainan"
+  },
+  {
+    "value": "Asia/Tashkent",
+    "continent": "Asia",
+    "offsetInMin": 300,
+    "label": "UTC+05:00 Uzbekistan Time - Tashkent, Namangan, Samarkand, Andijon"
+  },
+  {
+    "value": "Asia/Tbilisi",
+    "continent": "Asia",
+    "offsetInMin": 240,
+    "label": "UTC+04:00 Georgia Time - Tbilisi, Kutaisi, Batumi, Sokhumi"
+  },
+  {
+    "value": "Asia/Tehran",
+    "continent": "Asia",
+    "offsetInMin": 210,
+    "label": "UTC+04:30 Iran Time - Tehran, Mashhad, Isfahan, Karaj"
+  },
+  {
+    "value": "Asia/Thimphu",
+    "continent": "Asia",
+    "offsetInMin": 360,
+    "label": "UTC+06:00 Bhutan Time - Thimphu, Punākha, Tsirang, Phuntsholing"
+  },
+  {
+    "value": "Asia/Tokyo",
+    "continent": "Asia",
+    "offsetInMin": 540,
+    "label": "UTC+09:00 Japan Time - Tokyo, Yokohama, Osaka, Nagoya"
+  },
+  {
+    "value": "Asia/Ulaanbaatar",
+    "continent": "Asia",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 Ulaanbaatar Time - Ulan Bator, Erdenet, Darhan, Hovd"
+  },
+  {
+    "value": "Asia/Urumqi",
+    "continent": "Asia",
+    "offsetInMin": 360,
+    "label": "UTC+06:00 China Time - Zhongshan, Ürümqi, Zhanjiang, Shihezi"
+  },
+  {
+    "value": "Asia/Vientiane",
+    "continent": "Asia",
+    "offsetInMin": 420,
+    "label": "UTC+07:00 Indochina Time - Vientiane, Pakse, Thakhèk, Savannakhet"
+  },
+  {
+    "value": "Asia/Vladivostok",
+    "continent": "Europe",
+    "offsetInMin": 600,
+    "label": "UTC+10:00 Vladivostok Time - Vladivostok, Khabarovsk, Khabarovsk Vtoroy, Komsomolsk-on-Amur"
+  },
+  {
+    "value": "Asia/Yangon",
+    "continent": "Asia",
+    "offsetInMin": 390,
+    "label": "UTC+06:30 Myanmar Time - Yangon, Mandalay, Nay Pyi Taw, Mawlamyine"
+  },
+  {
+    "value": "Asia/Yekaterinburg",
+    "continent": "Europe",
+    "offsetInMin": 300,
+    "label": "UTC+05:00 Yekaterinburg Time - Yekaterinburg, Chelyabinsk, Ufa, Perm"
+  },
+  {
+    "value": "Asia/Yerevan",
+    "continent": "Asia",
+    "offsetInMin": 240,
+    "label": "UTC+04:00 Armenia Time - Yerevan, Gyumri, Vanadzor, Vagharshapat"
+  },
+  {
+    "value": "Atlantic/Azores",
+    "continent": "Europe",
+    "offsetInMin": -60,
+    "label": "UTC+00:00 Azores Time - Ponta Delgada"
+  },
+  {
+    "value": "Atlantic/Bermuda",
+    "continent": "North America",
+    "offsetInMin": -240,
+    "label": "UTC-03:00 Atlantic Time - Hamilton"
+  },
+  {
+    "value": "Atlantic/Canary",
+    "continent": "Europe",
+    "offsetInMin": 0,
+    "label": "UTC+01:00 Western European Time - Las Palmas de Gran Canaria, Santa Cruz de Tenerife, La Laguna, Telde"
+  },
+  {
+    "value": "Atlantic/Cape_Verde",
+    "continent": "Africa",
+    "offsetInMin": -60,
+    "label": "UTC-01:00 Cape Verde Time - Praia, Mindelo, Santa Maria, Cova Figueira"
+  },
+  {
+    "value": "Atlantic/Faroe",
+    "continent": "Europe",
+    "offsetInMin": 0,
+    "label": "UTC+01:00 Western European Time - Tórshavn"
+  },
+  {
+    "value": "Atlantic/Reykjavik",
+    "continent": "Europe",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Reykjavík, Kópavogur, Hafnarfjörður, Akureyri"
+  },
+  {
+    "value": "Atlantic/South_Georgia",
+    "continent": "Antarctica",
+    "offsetInMin": -120,
+    "label": "UTC-02:00 South Georgia Time - Grytviken"
+  },
+  {
+    "value": "Atlantic/St_Helena",
+    "continent": "Africa",
+    "offsetInMin": 0,
+    "label": "UTC+00:00 Greenwich Mean Time - Jamestown"
+  },
+  {
+    "value": "Atlantic/Stanley",
+    "continent": "South America",
+    "offsetInMin": -180,
+    "label": "UTC-03:00 Falkland Islands Time - Stanley"
+  },
+  {
+    "value": "Australia/Adelaide",
+    "continent": "Oceania",
+    "offsetInMin": 570,
+    "label": "UTC+09:30 Australian Central Time - Adelaide, Adelaide Hills, Mount Gambier, Morphett Vale"
+  },
+  {
+    "value": "Australia/Brisbane",
+    "continent": "Oceania",
+    "offsetInMin": 600,
+    "label": "UTC+10:00 Australian Eastern Time - Brisbane, Gold Coast, Logan City, Townsville"
+  },
+  {
+    "value": "Australia/Darwin",
+    "continent": "Oceania",
+    "offsetInMin": 570,
+    "label": "UTC+09:30 Australian Central Time - Darwin, Alice Springs, Palmerston"
+  },
+  {
+    "value": "Australia/Eucla",
+    "continent": "Oceania",
+    "offsetInMin": 525,
+    "label": "UTC+08:45 Australian Central Western Time - Eucla"
+  },
+  {
+    "value": "Australia/Lord_Howe",
+    "continent": "Oceania",
+    "offsetInMin": 630,
+    "label": "UTC+10:30 Lord Howe Time - Lord Howe"
+  },
+  {
+    "value": "Australia/Perth",
+    "continent": "Oceania",
+    "offsetInMin": 480,
+    "label": "UTC+08:00 Australian Western Time - Perth, Rockingham, Mandurah, Bunbury"
+  },
+  {
+    "value": "Australia/Sydney",
+    "continent": "Oceania",
+    "offsetInMin": 600,
+    "label": "UTC+10:00 Australian Eastern Time - Sydney, Melbourne, Canberra, Newcastle"
+  },
+  {
+    "value": "Europe/Amsterdam",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Amsterdam, Rotterdam, The Hague, Utrecht"
+  },
+  {
+    "value": "Europe/Andorra",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Andorra la Vella, les Escaldes"
+  },
+  {
+    "value": "Europe/Athens",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Athens, Thessaloníki, Pátra, Piraeus"
+  },
+  {
+    "value": "Europe/Belgrade",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Belgrade, Niš, Novi Sad, Zemun"
+  },
+  {
+    "value": "Europe/Berlin",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Berlin, Hamburg, Munich, Köln"
+  },
+  {
+    "value": "Europe/Bratislava",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Bratislava, Košice, Prešov, Nitra"
+  },
+  {
+    "value": "Europe/Brussels",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Brussels, Antwerpen, Gent, Charleroi"
+  },
+  {
+    "value": "Europe/Bucharest",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Bucharest, Sector 3, Sector 6, Sector 2"
+  },
+  {
+    "value": "Europe/Budapest",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Budapest, Debrecen, Miskolc, Szeged"
+  },
+  {
+    "value": "Europe/Chisinau",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Chisinau, Tiraspol, Bălţi, Bender"
+  },
+  {
+    "value": "Europe/Copenhagen",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Copenhagen, Århus, Odense, Aalborg"
+  },
+  {
+    "value": "Europe/Dublin",
+    "continent": "Europe",
+    "offsetInMin": 0,
+    "label": "UTC+01:00 Greenwich Mean Time - Dublin, Cork, Luimneach, Gaillimh"
+  },
+  {
+    "value": "Europe/Gibraltar",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Gibraltar"
+  },
+  {
+    "value": "Europe/Guernsey",
+    "continent": "Europe",
+    "offsetInMin": 0,
+    "label": "UTC+01:00 Greenwich Mean Time - Saint Peter Port"
+  },
+  {
+    "value": "Europe/Helsinki",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Helsinki, Espoo, Tampere, Vantaa"
+  },
+  {
+    "value": "Europe/Isle_of_Man",
+    "continent": "Europe",
+    "offsetInMin": 0,
+    "label": "UTC+01:00 Greenwich Mean Time - Douglas"
+  },
+  {
+    "value": "Europe/Istanbul",
+    "continent": "Asia",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 Turkey Time - Istanbul, Ankara, İzmir, Bursa"
+  },
+  {
+    "value": "Europe/Jersey",
+    "continent": "Europe",
+    "offsetInMin": 0,
+    "label": "UTC+01:00 Greenwich Mean Time - Saint Helier"
+  },
+  {
+    "value": "Europe/Kaliningrad",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+02:00 Eastern European Time - Kaliningrad, Chernyakhovsk, Sovetsk, Baltiysk"
+  },
+  {
+    "value": "Europe/Kiev",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Kyiv, Kharkiv, Donetsk, Odessa"
+  },
+  {
+    "value": "Europe/Lisbon",
+    "continent": "Europe",
+    "offsetInMin": 0,
+    "label": "UTC+01:00 Western European Time - Lisbon, Porto, Amadora, Braga"
+  },
+  {
+    "value": "Europe/Ljubljana",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Ljubljana, Maribor, Celje, Kranj"
+  },
+  {
+    "value": "Europe/London",
+    "continent": "Europe",
+    "offsetInMin": 0,
+    "label": "UTC+01:00 Greenwich Mean Time - London, Birmingham, Liverpool, Sheffield"
+  },
+  {
+    "value": "Europe/Luxembourg",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Luxembourg, Esch-sur-Alzette, Dudelange"
+  },
+  {
+    "value": "Europe/Madrid",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Madrid, Barcelona, Valencia, Sevilla"
+  },
+  {
+    "value": "Europe/Malta",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Birkirkara, Qormi, Mosta, Żabbar"
+  },
+  {
+    "value": "Europe/Mariehamn",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Mariehamn"
+  },
+  {
+    "value": "Europe/Minsk",
+    "continent": "Europe",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 Moscow Time - Minsk, Homyel', Mahilyow, Vitebsk"
+  },
+  {
+    "value": "Europe/Monaco",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Monaco, Monte-Carlo"
+  },
+  {
+    "value": "Europe/Moscow",
+    "continent": "Europe",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 Moscow Time - Moscow, Saint Petersburg, Nizhniy Novgorod, Kazan"
+  },
+  {
+    "value": "Europe/Oslo",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Oslo, Bergen, Trondheim, Stavanger"
+  },
+  {
+    "value": "Europe/Paris",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Paris, Marseille, Lyon, Toulouse"
+  },
+  {
+    "value": "Europe/Podgorica",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Podgorica, Nikšić, Herceg Novi, Pljevlja"
+  },
+  {
+    "value": "Europe/Prague",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Prague, Brno, Ostrava, Pilsen"
+  },
+  {
+    "value": "Europe/Riga",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Riga, Daugavpils, Liepāja, Jelgava"
+  },
+  {
+    "value": "Europe/Rome",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Rome, Milan, Naples, Turin"
+  },
+  {
+    "value": "Europe/Samara",
+    "continent": "Europe",
+    "offsetInMin": 240,
+    "label": "UTC+04:00 Samara Time - Samara, Saratov, Togliatti-on-the-Volga, Ulyanovsk"
+  },
+  {
+    "value": "Europe/San_Marino",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - San Marino"
+  },
+  {
+    "value": "Europe/Sarajevo",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Sarajevo, Banja Luka, Zenica, Tuzla"
+  },
+  {
+    "value": "Europe/Skopje",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Skopje, Bitola, Kumanovo, Prilep"
+  },
+  {
+    "value": "Europe/Sofia",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Sofia, Plovdiv, Varna, Burgas"
+  },
+  {
+    "value": "Europe/Stockholm",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Stockholm, Göteborg, Malmö, Uppsala"
+  },
+  {
+    "value": "Europe/Tallinn",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Tallinn, Tartu, Narva, Kohtla-Järve"
+  },
+  {
+    "value": "Europe/Tirane",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Tirana, Durrës, Elbasan, Vlorë"
+  },
+  {
+    "value": "Europe/Vaduz",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Vaduz"
+  },
+  {
+    "value": "Europe/Vatican",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Vatican City"
+  },
+  {
+    "value": "Europe/Vienna",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Vienna, Graz, Linz, Favoriten"
+  },
+  {
+    "value": "Europe/Vilnius",
+    "continent": "Europe",
+    "offsetInMin": 120,
+    "label": "UTC+03:00 Eastern European Time - Vilnius, Kaunas, Klaipėda, Šiauliai"
+  },
+  {
+    "value": "Europe/Warsaw",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Warsaw, Łódź, Kraków, Wrocław"
+  },
+  {
+    "value": "Europe/Zagreb",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Zagreb, Split, Rijeka, Osijek"
+  },
+  {
+    "value": "Europe/Zurich",
+    "continent": "Europe",
+    "offsetInMin": 60,
+    "label": "UTC+02:00 Central European Time - Zürich, Genève, Basel, Lausanne"
+  },
+  {
+    "value": "Indian/Antananarivo",
+    "continent": "Africa",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 East Africa Time - Antananarivo, Toamasina, Antsirabe, Fianarantsoa"
+  },
+  {
+    "value": "Indian/Chagos",
+    "continent": "Asia",
+    "offsetInMin": 360,
+    "label": "UTC+06:00 Indian Ocean Time - Chagos"
+  },
+  {
+    "value": "Indian/Christmas",
+    "continent": "Oceania",
+    "offsetInMin": 420,
+    "label": "UTC+07:00 Christmas Island Time - Flying Fish Cove"
+  },
+  {
+    "value": "Indian/Cocos",
+    "continent": "Asia",
+    "offsetInMin": 390,
+    "label": "UTC+06:30 Cocos Islands Time - West Island"
+  },
+  {
+    "value": "Indian/Comoro",
+    "continent": "Africa",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 East Africa Time - Moroni, Moutsamoudou"
+  },
+  {
+    "value": "Indian/Kerguelen",
+    "continent": "Antarctica",
+    "offsetInMin": 300,
+    "label": "UTC+05:00 French Southern & Antarctic Time - Port-aux-Français"
+  },
+  {
+    "value": "Indian/Mahe",
+    "continent": "Africa",
+    "offsetInMin": 240,
+    "label": "UTC+04:00 Seychelles Time - Victoria"
+  },
+  {
+    "value": "Indian/Maldives",
+    "continent": "Asia",
+    "offsetInMin": 300,
+    "label": "UTC+05:00 Maldives Time - Male"
+  },
+  {
+    "value": "Indian/Mauritius",
+    "continent": "Africa",
+    "offsetInMin": 240,
+    "label": "UTC+04:00 Mauritius Time - Port Louis, Beau Bassin-Rose Hill, Vacoas, Curepipe"
+  },
+  {
+    "value": "Indian/Mayotte",
+    "continent": "Africa",
+    "offsetInMin": 180,
+    "label": "UTC+03:00 East Africa Time - Mamoudzou, Koungou, Dzaoudzi"
+  },
+  {
+    "value": "Indian/Reunion",
+    "continent": "Africa",
+    "offsetInMin": 240,
+    "label": "UTC+04:00 Réunion Time - Saint-Denis, Saint-Paul, Saint-Pierre, Le Tampon"
+  },
+  {
+    "value": "Pacific/Apia",
+    "continent": "Oceania",
+    "offsetInMin": 780,
+    "label": "UTC+13:00 Apia Time - Apia"
+  },
+  {
+    "value": "Pacific/Auckland",
+    "continent": "Oceania",
+    "offsetInMin": 720,
+    "label": "UTC+12:00 New Zealand Time - Auckland, Wellington, Christchurch, Manukau City"
+  },
+  {
+    "value": "Pacific/Bougainville",
+    "continent": "Oceania",
+    "offsetInMin": 660,
+    "label": "UTC+11:00 Bougainville Time - Arawa"
+  },
+  {
+    "value": "Pacific/Chatham",
+    "continent": "Oceania",
+    "offsetInMin": 765,
+    "label": "UTC+12:45 Chatham Time - Chatham"
+  },
+  {
+    "value": "Pacific/Chuuk",
+    "continent": "Oceania",
+    "offsetInMin": 600,
+    "label": "UTC+10:00 Chuuk Time - Chuuk"
+  },
+  {
+    "value": "Pacific/Easter",
+    "continent": "South America",
+    "offsetInMin": -360,
+    "label": "UTC-06:00 Easter Island Time - Easter"
+  },
+  {
+    "value": "Pacific/Efate",
+    "continent": "Oceania",
+    "offsetInMin": 660,
+    "label": "UTC+11:00 Vanuatu Time - Port-Vila"
+  },
+  {
+    "value": "Pacific/Enderbury",
+    "continent": "Oceania",
+    "offsetInMin": 780,
+    "label": "UTC+13:00 Phoenix Islands Time - Enderbury"
+  },
+  {
+    "value": "Pacific/Fakaofo",
+    "continent": "Oceania",
+    "offsetInMin": 780,
+    "label": "UTC+13:00 Tokelau Time - Fakaofo"
+  },
+  {
+    "value": "Pacific/Fiji",
+    "continent": "Oceania",
+    "offsetInMin": 720,
+    "label": "UTC+12:00 Fiji Time - Suva, Lautoka, Nadi, Labasa"
+  },
+  {
+    "value": "Pacific/Funafuti",
+    "continent": "Oceania",
+    "offsetInMin": 720,
+    "label": "UTC+12:00 Tuvalu Time - Funafuti"
+  },
+  {
+    "value": "Pacific/Galapagos",
+    "continent": "South America",
+    "offsetInMin": -360,
+    "label": "UTC-06:00 Galapagos Time - Galapagos"
+  },
+  {
+    "value": "Pacific/Gambier",
+    "continent": "Oceania",
+    "offsetInMin": -540,
+    "label": "UTC-09:00 Gambier Time - Gambier"
+  },
+  {
+    "value": "Pacific/Guadalcanal",
+    "continent": "Oceania",
+    "offsetInMin": 660,
+    "label": "UTC+11:00 Solomon Islands Time - Honiara"
+  },
+  {
+    "value": "Pacific/Guam",
+    "continent": "Oceania",
+    "offsetInMin": 600,
+    "label": "UTC+10:00 Chamorro Time - Dededo Village, Yigo Village, Tamuning-Tumon-Harmon Village, Tamuning"
+  },
+  {
+    "value": "Pacific/Honolulu",
+    "continent": "North America",
+    "offsetInMin": -600,
+    "label": "UTC-10:00 Hawaii-Aleutian Time - Honolulu, East Honolulu, Pearl City, Hilo"
+  },
+  {
+    "value": "Pacific/Kiritimati",
+    "continent": "Oceania",
+    "offsetInMin": 840,
+    "label": "UTC+14:00 Line Islands Time - Kiritimati"
+  },
+  {
+    "value": "Pacific/Kosrae",
+    "continent": "Oceania",
+    "offsetInMin": 660,
+    "label": "UTC+11:00 Kosrae Time - Kosrae, Palikir - National Government Center"
+  },
+  {
+    "value": "Pacific/Majuro",
+    "continent": "Oceania",
+    "offsetInMin": 720,
+    "label": "UTC+12:00 Marshall Islands Time - Majuro, Kwajalein, RMI Capitol"
+  },
+  {
+    "value": "Pacific/Marquesas",
+    "continent": "Oceania",
+    "offsetInMin": -570,
+    "label": "UTC-09:30 Marquesas Time - Marquesas"
+  },
+  {
+    "value": "Pacific/Midway",
+    "continent": "Oceania",
+    "offsetInMin": -660,
+    "label": "UTC-11:00 Samoa Time - Midway"
+  },
+  {
+    "value": "Pacific/Nauru",
+    "continent": "Oceania",
+    "offsetInMin": 720,
+    "label": "UTC+12:00 Nauru Time - Yaren"
+  },
+  {
+    "value": "Pacific/Niue",
+    "continent": "Oceania",
+    "offsetInMin": -660,
+    "label": "UTC-11:00 Niue Time - Alofi"
+  },
+  {
+    "value": "Pacific/Norfolk",
+    "continent": "Oceania",
+    "offsetInMin": 660,
+    "label": "UTC+11:00 Norfolk Island Time - Kingston"
+  },
+  {
+    "value": "Pacific/Noumea",
+    "continent": "Oceania",
+    "offsetInMin": 660,
+    "label": "UTC+11:00 New Caledonia Time - Nouméa, Mont-Dore, Dumbéa"
+  },
+  {
+    "value": "Pacific/Pago_Pago",
+    "continent": "Oceania",
+    "offsetInMin": -660,
+    "label": "UTC-11:00 Samoa Time - Pago Pago"
+  },
+  {
+    "value": "Pacific/Palau",
+    "continent": "Oceania",
+    "offsetInMin": 540,
+    "label": "UTC+09:00 Palau Time - Ngerulmud"
+  },
+  {
+    "value": "Pacific/Pitcairn",
+    "continent": "Oceania",
+    "offsetInMin": -480,
+    "label": "UTC-08:00 Pitcairn Time - Adamstown"
+  },
+  {
+    "value": "Pacific/Port_Moresby",
+    "continent": "Oceania",
+    "offsetInMin": 600,
+    "label": "UTC+10:00 Papua New Guinea Time - Port Moresby, Lae, Mount Hagen, Popondetta"
+  },
+  {
+    "value": "Pacific/Rarotonga",
+    "continent": "Oceania",
+    "offsetInMin": -600,
+    "label": "UTC-10:00 Cook Islands Time - Avarua"
+  },
+  {
+    "value": "Pacific/Saipan",
+    "continent": "Oceania",
+    "offsetInMin": 600,
+    "label": "UTC+10:00 Chamorro Time - Saipan"
+  },
+  {
+    "value": "Pacific/Tahiti",
+    "continent": "Oceania",
+    "offsetInMin": -600,
+    "label": "UTC-10:00 Tahiti Time - Faaa, Papeete, Punaauia"
+  },
+  {
+    "value": "Pacific/Tarawa",
+    "continent": "Oceania",
+    "offsetInMin": 720,
+    "label": "UTC+12:00 Gilbert Islands Time - Tarawa"
+  },
+  {
+    "value": "Pacific/Tongatapu",
+    "continent": "Oceania",
+    "offsetInMin": 780,
+    "label": "UTC+13:00 Tonga Time - Nuku‘alofa"
+  },
+  {
+    "value": "Pacific/Wake",
+    "continent": "Oceania",
+    "offsetInMin": 720,
+    "label": "UTC+12:00 Wake Island Time - Wake"
+  },
+  {
+    "value": "Pacific/Wallis",
+    "continent": "Oceania",
+    "offsetInMin": 720,
+    "label": "UTC+12:00 Wallis & Futuna Time - Mata-Utu"
+  }
+]

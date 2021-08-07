@@ -20,7 +20,8 @@ export class SettingsService {
 
     public async update(settings: {
         userId: string;
-        darkTheme: boolean;
+        darkTheme?: boolean;
+        timezone?: string;
     }): Promise<Settings> {
         await this.settingsModel.updateOne({userId: settings.userId}, settings);
         return this.settingsModel.findOne({userId: settings.userId});
