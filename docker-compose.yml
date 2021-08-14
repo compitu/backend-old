@@ -1,4 +1,4 @@
-version: "2"
+version: "3.9"
 
 services:
   db:
@@ -6,7 +6,7 @@ services:
     container_name: db_mongo
     restart: always
     ports:
-      - 27017:27017
+      - "27017:27017"
     networks:
       - compitu
   compitu:
@@ -14,7 +14,7 @@ services:
     image: compitu
     container_name: backend
     ports:
-    - 3000:3000
+    - "3000:3000"
     depends_on:
       - db
     environment:
@@ -24,6 +24,7 @@ services:
       - JWT_REFRESH_EXPIRE_IN=14d
       - SEEDER_PATH=/build/data/
       - DB_URI=mongodb://db_mongo/compitu
+      - FRONTEND_BASE_URL=http://localhost:4200
     networks:
       - compitu
 networks:
