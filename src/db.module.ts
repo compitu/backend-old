@@ -1,7 +1,6 @@
 import {Module, OnModuleInit} from '@nestjs/common';
 import {ConfigModule, ConfigService} from '@nestjs/config';
 import {InjectConnection, MongooseModule} from '@nestjs/mongoose';
-import {isNil} from 'lodash';
 import {Connection} from 'mongoose';
 import {seed} from './build/seeder';
 
@@ -22,12 +21,10 @@ export class DbModule implements OnModuleInit {
     constructor(@InjectConnection() private connection: Connection) {}
 
     onModuleInit(): void {
-        this.connection.db
-            .listCollections({name: 'colors'})
-            .next((err, collinfo) => {
-                if (isNil(collinfo)) {
-                    seed();
-                }
-            });
+        this.connection.collection('colors').countDocuments((err, count) => {
+            if (count === 0) {
+                seed();
+            }
+        });
     }
 }
