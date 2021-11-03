@@ -66,7 +66,9 @@ export class AuthService {
         };
     }
 
-    async login(user: UserPayload): Promise<{access: string; refresh: string}> {
+    async generateTokens(
+        user: UserPayload
+    ): Promise<{access: string; refresh: string}> {
         const access = await this.tokenService.generateAccessToken(user);
         const refresh = await this.tokenService.generateRefreshToken(user);
         return {access, refresh};

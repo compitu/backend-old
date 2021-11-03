@@ -1,4 +1,4 @@
-import {Injectable, UnauthorizedException} from '@nestjs/common';
+import {Injectable} from '@nestjs/common';
 import {ConfigService} from '@nestjs/config';
 import {JwtService} from '@nestjs/jwt';
 import {UserPayload} from './user-payload';
@@ -35,19 +35,5 @@ export class TokenService {
                 expiresIn,
             }
         );
-    }
-
-    public verifyRefreshToken(token: string): Promise<{id: string}> {
-        return this.verify(token, this.refreshSecret);
-    }
-
-    private verify(token: string, secret: string): Promise<{id: string}> {
-        return this.jwtService
-            .verifyAsync(token, {
-                secret,
-            })
-            .catch(() => {
-                throw new UnauthorizedException();
-            });
     }
 }

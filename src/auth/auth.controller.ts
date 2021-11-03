@@ -1,15 +1,8 @@
-import {
-    Body,
-    Controller,
-    Get,
-    Post,
-    Request,
-    UnauthorizedException,
-    UseGuards,
-} from '@nestjs/common';
+import {Body, Controller, Get, Post, Request, UseGuards} from '@nestjs/common';
 import {CreateUserDto} from '../users/create-user.dto';
 import {AuthService} from './auth.service';
 import {JwtAuthGuard} from './jwt-auth.guard';
+import {JwtRefreshAuthGuard} from './jwt-refresh-auth.guard';
 import {LocalAuthGuard} from './local-auth.guard';
 import {TokenService} from './token.service';
 import {UserPayload} from './user-payload';
@@ -37,23 +30,13 @@ export class AuthController {
     @UseGuards(LocalAuthGuard)
     @Post('login')
     async login(@Request() req: {user: UserPayload}): Promise<Tokens> {
-        return this.authService.login(req.user);
+        return this.authService.generateTokens(req.user);
     }
 
-    @Post('refresh')
-    async refresh(@Body('refresh') refreshToken: string): Promise<Tokens> {
-        const data = await this.tokenService.verifyRefreshToken(refreshToken);
-
-        if (!data) {
-            throw new UnauthorizedException();
-        }
-
-        /*const access = await this.tokenService.generateAccessToken(data.id);
-        const refresh = await this.tokenService.generateRefreshToken(data.id);
-
-        return {access, refresh};*/
-
-        return undefined;
+    @UseGuards(JwtRefreshAuthGuard)
+    @Get('refresh')
+    async refresh(@Request() req: {user: UserPayload}): Promise<Tokens> {
+        return this.authService.generateTokens(req.user);
     }
 
     @UseGuards(JwtAuthGuard)
