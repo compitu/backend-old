@@ -8,9 +8,6 @@ import {
     UnauthorizedException,
     UseGuards,
 } from '@nestjs/common';
-import * as bcrypt from 'bcrypt';
-import {ProjectType} from '../projects/project-type';
-import {Project} from '../projects/project.entity';
 import {ProjectsService} from '../projects/projects.service';
 import {SettingsService} from '../settings/settings.service';
 import {CreateUserDto} from '../users/create-user.dto';
@@ -43,33 +40,7 @@ export class AuthController {
         const name = createUserDto.name;
         const email = createUserDto.email;
         const password = createUserDto.password;
-
-        const hashedPassword = await bcrypt.hash(password, 12);
-
-        const user = await this.usersService.create({
-            name,
-            email,
-            password: hashedPassword,
-        } as User);
-
-        const settings = await this.settingsService.create({
-            userId: user._id,
-            darkTheme: false,
-            timezone: 'UTC',
-        });
-
-        const project = await this.projectService.create({
-            name: 'Inbox',
-            type: ProjectType.BUILT_IN,
-            userId: user._id,
-            icon: 'inbox',
-        } as Project);
-
-        return {
-            id: user._id,
-            name: user.name,
-            email: user.email,
-        };
+        return this.authService.register(name, email, password);
     }
 
     @UseGuards(LocalAuthGuard)
