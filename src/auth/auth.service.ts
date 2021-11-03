@@ -1,10 +1,14 @@
 import {Injectable} from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 import {UsersService} from '../users/users.service';
+import {TokenService} from './token.service';
 
 @Injectable()
 export class AuthService {
-    constructor(private usersService: UsersService) {}
+    constructor(
+        private usersService: UsersService,
+        private tokenService: TokenService
+    ) {}
 
     async validateUser(
         email: string,
@@ -19,5 +23,11 @@ export class AuthService {
             }
         }
         return null;
+    }
+
+    async login(uid: string): Promise<{access: string; refresh: string}> {
+        const access = await this.tokenService.generateAccessToken(uid);
+        const refresh = await this.tokenService.generateRefreshToken(uid);
+        return {access, refresh};
     }
 }

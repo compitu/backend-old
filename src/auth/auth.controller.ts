@@ -16,6 +16,7 @@ import {SettingsService} from '../settings/settings.service';
 import {CreateUserDto} from '../users/create-user.dto';
 import {User} from '../users/user.entity';
 import {UsersService} from '../users/users.service';
+import {AuthService} from './auth.service';
 import {JwtAuthGuard} from './jwt-auth.guard';
 import {LocalAuthGuard} from './local-auth.guard';
 import {TokenService} from './token.service';
@@ -31,7 +32,8 @@ export class AuthController {
         private usersService: UsersService,
         private tokenService: TokenService,
         private projectService: ProjectsService,
-        private settingsService: SettingsService
+        private settingsService: SettingsService,
+        private authService: AuthService
     ) {}
 
     @Post('register')
@@ -75,11 +77,7 @@ export class AuthController {
     async login(
         @Request() req: {user: {id: string; email: string}}
     ): Promise<Tokens> {
-        const access = await this.tokenService.generateAccessToken(req.user.id);
-        const refresh = await this.tokenService.generateRefreshToken(
-            req.user.id
-        );
-        return {access, refresh};
+        return this.authService.login(req.user.id);
     }
 
     @Post('refresh')
