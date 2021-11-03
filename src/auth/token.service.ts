@@ -1,6 +1,7 @@
 import {Injectable, UnauthorizedException} from '@nestjs/common';
 import {ConfigService} from '@nestjs/config';
 import {JwtService} from '@nestjs/jwt';
+import {UserPayload} from './user-payload';
 
 @Injectable()
 export class TokenService {
@@ -14,30 +15,26 @@ export class TokenService {
         private configService: ConfigService
     ) {}
 
-    public generateAccessToken(uid: string): Promise<string> {
-        return this.generate(uid, this.accessSecret, this.accessExpiresIn);
+    public generateAccessToken(user: UserPayload): Promise<string> {
+        return this.generate(user, this.accessSecret, this.accessExpiresIn);
     }
 
-    public generateRefreshToken(uid: string): Promise<string> {
-        return this.generate(uid, this.refreshSecret, this.refreshExpiresIn);
+    public generateRefreshToken(user: UserPayload): Promise<string> {
+        return this.generate(user, this.refreshSecret, this.refreshExpiresIn);
     }
 
     private generate(
-        uid: string,
+        user: UserPayload,
         secret: string,
         expiresIn: string | number
     ): Promise<string> {
         return this.jwtService.signAsync(
-            {id: uid},
+            {sub: user.id, name: user.name, email: user.email},
             {
                 secret,
                 expiresIn,
             }
         );
-    }
-
-    public verifyAccessToken(token: string): Promise<{id: string}> {
-        return this.verify(token, this.accessSecret);
     }
 
     public verifyRefreshToken(token: string): Promise<{id: string}> {

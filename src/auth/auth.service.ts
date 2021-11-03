@@ -7,6 +7,7 @@ import {SettingsService} from '../settings/settings.service';
 import {User} from '../users/user.entity';
 import {UsersService} from '../users/users.service';
 import {TokenService} from './token.service';
+import {UserPayload} from './user-payload';
 
 @Injectable()
 export class AuthService {
@@ -20,13 +21,13 @@ export class AuthService {
     async validateUser(
         email: string,
         pass: string
-    ): Promise<{id: string; email: string} | null> {
+    ): Promise<UserPayload | null> {
         const user = await this.usersService.findByEmail(email);
         if (user) {
             const passwordMatch = await bcrypt.compare(pass, user?.password);
             if (passwordMatch) {
-                const {id, email} = user;
-                return {id, email};
+                const {id, email, name} = user;
+                return {id, email, name};
             }
         }
         return null;
@@ -36,7 +37,7 @@ export class AuthService {
         name: string,
         email: string,
         password: string
-    ): Promise<Partial<User>> {
+    ): Promise<UserPayload> {
         const hashedPassword = await bcrypt.hash(password, 12);
 
         const user = await this.usersService.create({
@@ -65,9 +66,9 @@ export class AuthService {
         };
     }
 
-    async login(uid: string): Promise<{access: string; refresh: string}> {
-        const access = await this.tokenService.generateAccessToken(uid);
-        const refresh = await this.tokenService.generateRefreshToken(uid);
+    async login(user: UserPayload): Promise<{access: string; refresh: string}> {
+        const access = await this.tokenService.generateAccessToken(user);
+        const refresh = await this.tokenService.generateRefreshToken(user);
         return {access, refresh};
     }
 }
