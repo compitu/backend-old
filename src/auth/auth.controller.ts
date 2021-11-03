@@ -4,11 +4,11 @@ import {
     Get,
     Post,
     Req,
+    Request,
     UnauthorizedException,
     UseGuards,
 } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
-import {Request} from 'express';
 import {ProjectType} from '../projects/project-type';
 import {Project} from '../projects/project.entity';
 import {ProjectsService} from '../projects/projects.service';
@@ -16,8 +16,8 @@ import {SettingsService} from '../settings/settings.service';
 import {CreateUserDto} from '../users/create-user.dto';
 import {User} from '../users/user.entity';
 import {UsersService} from '../users/users.service';
-import {CreateLoginDto} from './create-login.dto';
 import {JwtAuthGuard} from './jwt-auth.guard';
+import {LocalAuthGuard} from './local-auth.guard';
 import {TokenService} from './token.service';
 
 interface Tokens {
@@ -70,24 +70,15 @@ export class AuthController {
         };
     }
 
+    @UseGuards(LocalAuthGuard)
     @Post('login')
-    async login(@Body() createLoginDto: CreateLoginDto): Promise<Tokens> {
-        const email = createLoginDto.email;
-        const password = createLoginDto.password;
-
-        const user = await this.usersService.findByEmail(email);
-
-        if (!user) {
-            throw new UnauthorizedException();
-        }
-
-        if (!(await bcrypt.compare(password, user.password))) {
-            throw new UnauthorizedException();
-        }
-
-        const access = await this.tokenService.generateAccessToken(user.id);
-        const refresh = await this.tokenService.generateRefreshToken(user.id);
-
+    async login(
+        @Request() req: {user: {id: string; email: string}}
+    ): Promise<Tokens> {
+        const access = await this.tokenService.generateAccessToken(req.user.id);
+        const refresh = await this.tokenService.generateRefreshToken(
+            req.user.id
+        );
         return {access, refresh};
     }
 
@@ -108,7 +99,7 @@ export class AuthController {
     @UseGuards(JwtAuthGuard)
     @Get('user')
     async user(@Req() request: Request): Promise<Partial<User>> {
-        try {
+        /*try {
             const authHeader = request.header('Authorization');
 
             if (!authHeader.startsWith('Bearer')) {
@@ -131,7 +122,9 @@ export class AuthController {
             };
         } catch (e) {
             throw new UnauthorizedException();
-        }
+        }*/
+
+        return undefined;
     }
 
     @Post('logout')
